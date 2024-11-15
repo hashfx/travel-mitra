@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #6a11e6;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: #fff;
+            color: #126de4;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ddd;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(189, 239, 26);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .container {
+            display: flex; /* Flex layout for horizontal scrolling */
+            overflow-x: auto; /* Enable horizontal scrolling */
+            gap: 20px; /* Spacing between cards */
+            padding-bottom: 10px;
+        }
+        .platform-card {
+            min-width: 300px; /* Minimum width to fit within the scrolling area */
+            flex: 0 0 auto; /* Prevents the card from shrinking or growing */
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: white;
+            position: relative;
+        }
+        .platform-card:hover {
+            transform: scale(1.05);
+        }
+        .platform-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+        }
+        .platform-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .platform-content p {
+            margin: 10px 0;
+        }
+        .platform-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #126de4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .platform-content a:hover {
+            background-color: #388E3C;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to your Travel Saathi in Andhra Pradesh</h1>
+    <a href="index.html" class="back-button">Back</a>
+    <p>Plan your trip with your family and friends, explore the rich culture & heritage of Andhra Pradesh </p>
+</header>
+
+<!-- Explore by State Section -->
+<div class="section">
+    <h2>Explore by State</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/vishakhapatnam.jpg');">
+            <div class="platform-content">
+                <h3>Vishakapatnam</h3>
+                <p>"A Gem of South India.!"</p>
+                <a href="https://visakhapatnam.ap.gov.in/tourism/#:~:text=%E2%80%9CA%20gem%20of%20South%20India%E2%80%9D&text=Visakhapatnam%2C%20also%20commonly%20known%20as,port%20cities%20in%20the%20country.">Learn more</a>
+            </div>
+        </div>
+        
+        <!-- <div class="platform-card" style="background-image: url('image/amravati.jpg');">
+            <div class="platform-content">
+                <h3>Amravati</h3>
+                <p>"The essence of incredible India"</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div> -->
+        <div class="platform-card" style="background-image: url('image/tirupati.jpg');">
+            <div class="platform-content">
+                <h3>Tirupati</h3>
+                <p>the abode of the Hindu god Venkateshvara, Lord of Seven Hills.</p>
+                <a href="https://www.tirumala.org/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/srisailam.jpg');">
+            <div class="platform-content">
+                <h3>Srisailam</h3>
+                <p>"Srisailam is Maha Shiva, Srisailam is Sri Chakra"</p>
+                <a href="https://www.srisailadevasthanam.org/en-in/home">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/lepakshi.avif');">
+            <div class="platform-content">
+                <h3>Lepakshi</h3>
+                <p>"architecture characterised by hanging pillars and cave chambers"</p>
+                <a href="https://www.rural.tourism.gov.in/Lepakshi-Village-Silver.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/arakuvalley.jpg');">
+            <div class="platform-content">
+                <h3>Araku Valley</h3>
+                <p>"Ooty of Andhra"</p>
+                <a href="https://vizagtourism.org.in/araku-valley-vizag">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Tour Packages Section -->
+<div class="section">
+    <h2>Tour Packages</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/arakuvalley.jpg');">
+            <div class="platform-content">
+                <h3>Vizag & Araku Valley Package</h3>
+                <p>Explore the scenic beauty of Vizag and the lush greenery of Araku Valley.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+        
+        <div class="platform-card" style="background-image: url('image/tirupati.jpg');">
+            <div class="platform-content">
+                <h3>Tirupati & Srisailam Pilgrimage</h3>
+                <p>Visit the holy shrines of Tirupati and Srisailam in a spiritual journey.</p>
+                <p><strong>Duration:</strong> 4 Days / 3 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+        
+        <div class="platform-card" style="background-image: url('image/kakinada.png');">
+            <div class="platform-content">
+                <h3>Kakinada Beach & Coringa Wildlife Sanctuary</h3>
+                <p>Enjoy the serene beaches and the rich biodiversity of Coringa Sanctuary.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+        
+        <div class="platform-card" style="background-image: url('image/lepakshi.avif');">
+            <div class="platform-content">
+                <h3>Lepakshi & Gandikota Adventure</h3>
+                <p>Witness the architectural marvels of Lepakshi and the Grand Canyon of India at Gandikota.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Ticket Booking Platforms Section -->
+<div class="section">
+    <h2>Ticket Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/irctc.jpg');">
+            <div class="platform-content">
+                <h3>IRCTC</h3>
+                <p>Book train tickets across India with ease through IRCTC.</p>
+                <a href="https://www.irctc.co.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/redbus.png');">
+            <div class="platform-content">
+                <h3>redBus</h3>
+                <p>Book train & Bus with guaranteed tickets across India with ease through Redbus.</p>
+                <a href="https://www.redbus.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book train, Bus & Flight  tickets with guarantee across India with ease through MakeMyTrip.</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/ixigo.png');">
+            <div class="platform-content">
+                <h3>ixigo</h3>
+                <p>>Book train & Flight  tickets across India with ease through ixigo.</p>
+                <a href="https://www.ixigo.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/abhibus.png');">
+            <div class="platform-content">
+                <h3>abhibus</h3>
+                <p>Book Bus, train & flight tickets across India with ease through abhibus.</p>
+                <a href="https://www.abhibus.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add similar sections for Taxi, Hotel, and Food Delivery as needed -->
+<div class="section">
+    <h2>Hotels Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/goibibo.jpeg');">
+            <div class="platform-content">
+                <h3>goibibo</h3>
+                <p>Book hotels across India for your safe stay with ease through goibibo.</p>
+                <a href="https://www.goibibo.com/hotels/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/oyo.png');">
+            <div class="platform-content">
+                <h3>OYO</h3>
+                <p>Book hotels across India easily for your safe stay with ease through OYO.</p>
+                <a href="https://www.oyorooms.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book Hotels with guarantee across India with ease through MakeMyTrip..</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/agoda.png');">
+            <div class="platform-content">
+                <h3>Agoda</h3>
+                <p>Book hotels across India easily for your safe stay with ease through agoda</p>
+                <a href="https://www.agoda.com/en-in/?cid=1844104&ds=J%2BoPuD0%2BxZ0QFbaX" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer>
+    <p>&copy; 2024 TravelSaathi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner - Assam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2E7D32;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: #fff;
+            color: #126de4;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ddd;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(189, 239, 26);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+        .platform-card {
+            min-width: 400px;
+            flex: 0 0 auto;
+            height: 450px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: white;
+            position: relative;
+        }
+        .platform-card:hover {
+            transform: scale(1.05);
+        }
+        .platform-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .platform-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .platform-content p {
+            margin: 10px 0;
+        }
+        .platform-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #126de4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .platform-content a:hover {
+            background-color: #388E3C;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to your Travel Saathi in Assam</h1>
+    <a href="index.html" class="back-button">Back</a>
+    <p>Plan your journey through the beautiful state of Assam and explore its rich cultural heritage!</p>
+</header>
+
+<!-- Explore by Destination Section -->
+<div class="section">
+    <h2>Explore by Destination</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/kaziranga.webp');">
+            <div class="platform-content">
+                <h3>Kaziranga National Park</h3>
+                <p>"Home of the Great Indian One-Horned Rhinoceros"</p>
+                <a href="https://www.assamtourism.gov.in/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/majuli.webp');">
+            <div class="platform-content">
+                <h3>Majuli Island</h3>
+                <p>"The Largest River Island in the World"</p>
+                <a href="https://www.assamtourism.gov.in/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/sivasagar.jpg');">
+            <div class="platform-content">
+                <h3>Sivasagar</h3>
+                <p>"Historical Hub of Assam with Beautiful Ahom Monuments"</p>
+                <a href="https://www.assamtourism.gov.in/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/manas.jpg');">
+            <div class="platform-content">
+                <h3>Manas National Park</h3>
+                <p>"A UNESCO Natural World Heritage Site"</p>
+                <a href="https://www.assamtourism.gov.in/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/dibrugarh.webp');">
+            <div class="platform-content">
+                <h3>Dibrugarh</h3>
+                <p>"The Tea City of India"</p>
+                <a href="https://www.assamtourism.gov.in/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/guwahati.png');">
+            <div class="platform-content">
+                <h3>Guwahati</h3>
+                <p>"The Tea City of India"</p>
+                <a href="https://www.assamtourism.gov.in/">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Tour Packages Section for Assam -->
+<div class="section">
+    <h2>Tour Packages in Assam</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/guwahati.png');">
+            <div class="platform-content">
+                <h3>Guwahati City Tour</h3>
+                <p>Explore the vibrant city of Guwahati, visit the Kamakhya Temple and enjoy a cruise on the Brahmaputra River.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/kaziranga.webp');">
+            <div class="platform-content">
+                <h3>Kaziranga National Park Safari</h3>
+                <p>Experience a thrilling safari in Kaziranga, home to the one-horned rhinoceros and diverse wildlife.</p>
+                <p><strong>Duration:</strong> 4 Days / 3 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/majuli.webp');">
+            <div class="platform-content">
+                <h3>Majuli Island Cultural Experience</h3>
+                <p>Discover the unique culture of Majuli, the world's largest river island, known for its vibrant festivals and satras.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/manas.jpg');">
+            <div class="platform-content">
+                <h3>Manas National Park Adventure</h3>
+                <p>Enjoy a wildlife adventure in Manas National Park, a UNESCO World Heritage site known for its rich biodiversity.</p>
+                <p><strong>Duration:</strong> 4 Days / 3 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/sivasagar.jpg');">
+            <div class="platform-content">
+                <h3>Sivasagar Heritage Tour</h3>
+                <p>Explore the historical sites of Sivasagar, including the Ahom Kingdom's palaces and temples.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Ticket Booking Platforms Section -->
+<div class="section">
+    <h2>Ticket Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/irctc.jpg');">
+            <div class="platform-content">
+                <h3>IRCTC</h3>
+                <p>Book train tickets across India for your Assam journey through IRCTC.</p>
+                <a href="https://www.irctc.co.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/redbus.png');">
+            <div class="platform-content">
+                <h3>redBus</h3>
+                <p>Book buses to explore Assam and nearby regions through RedBus.</p>
+                <a href="https://www.redbus.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Plan your flights and other travel options across India through MakeMyTrip.</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hotel Booking Platforms Section -->
+<div class="section">
+    <h2>Hotels Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/goibibo.jpeg');">
+            <div class="platform-content">
+                <h3>goibibo</h3>
+                <p>Book your stay across Assam through goibibo.</p>
+                <a href="https://www.goibibo.com/hotels/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/oyo.png');">
+            <div class="platform-content">
+                <h3>OYO</h3>
+                <p>Find and book hotels for a comfortable stay in Assam through OYO.</p>
+                <a href="https://www.oyorooms.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/agoda.png');">
+            <div class="platform-content">
+                <h3>Agoda</h3>
+                <p>Book hotels across Assam through Agoda.</p>
+                <a href="https://www.agoda.com/en-in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 TravelSaathi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner - Meghalaya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #a76666;
+        }
+        header {
+            background-color: #126de4;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: #fff;
+            color: #126de4;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ddd;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(79, 95, 117);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .section1 {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(191, 137, 204);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section1 h2 {
+            color: #333;
+        }
+        .section2 {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(185, 213, 121);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section2 h2 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+        .platform-card {
+            min-width: 300px;
+            flex: 0 0 auto;
+            height: 350px;
+            background-size: contain;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: white;
+            position: relative;
+        }
+        .platform-card:hover {
+            transform: scale(1.05);
+        }
+        .platform-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .platform-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .platform-content p {
+            margin: 10px 0;
+        }
+        .platform-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #126de4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .platform-content a:hover {
+            background-color: #256328;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to your Travel Saathi in Meghalaya</h1>
+    <a href="index.html" class="back-button">Back</a>
+    <p>Discover the breathtaking landscapes, waterfalls, and culture of Meghalaya with us!</p>
+</header>
+
+<!-- Explore by Destination Section -->
+<div class="section">
+    <h2>Explore by Destination</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/cherranpunji.jpg');">
+            <div class="platform-content">
+                <h3>Cherrapunji</h3>
+                <p>"Known for heavy rainfall, living root bridges, and beautiful waterfalls"</p>
+                <a href="https://www.meghalayatourism.in/destinations/sohra/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/shillong.jpeg');">
+            <div class="platform-content">
+                <h3>Shillong</h3>
+                <p>"Scotland of the East and capital of Meghalaya"</p>
+                <a href="https://www.meghalayatourism.in/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/dawki.jpg');">
+            <div class="platform-content">
+                <h3>Dawki</h3>
+                <p>"Crystal clear Umngot River and border town near Bangladesh"</p>
+                <a href="https://www.meghalayatourism.in/destinations/dawki-shnongpdeng/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/mynn.jpg');">
+            <div class="platform-content">
+                <h3>Mawlynnong</h3>
+                <p>"Asia's cleanest village with scenic beauty"</p>
+                <a href="https://www.meghalayatourism.in/destinations/mawlynnong-village/">Learn more</a>
+            </div>
+        </div>
+        
+        <div class="platform-card" style="background-image: url('image/Mawsynram.png');">
+            <div class="platform-content">
+                <h3>Mawsynram</h3>
+                <p>"World's wettest place with lush greenery"</p>
+                <a href="https://www.meghalayatourism.in/destinations/mawsynram/">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Tour Packages Section for Meghalaya -->
+<div class="section">
+    <h2>Tour Packages in Meghalaya</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/cherranpunji.jpg');">
+            <div class="platform-content">
+                <h3>Cherrapunji Adventure Tour</h3>
+                <p>Experience the breathtaking waterfalls and living root bridges of Cherrapunji.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/shillong.jpeg');">
+            <div class="platform-content">
+                <h3>Shillong Sightseeing Tour</h3>
+                <p>Discover the capital of Meghalaya, known as the "Scotland of the East."</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/dawki.jpg');">
+            <div class="platform-content">
+                <h3>Dawki River Adventure</h3>
+                <p>Enjoy boating in the crystal-clear Umngot River and explore the scenic surroundings.</p>
+                <p><strong>Duration:</strong> 1 Day Trip</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/mynn.jpg');">
+            <div class="platform-content">
+                <h3>Mawlynnong Village Experience</h3>
+                <p>Visit Asia's cleanest village and immerse yourself in its pristine beauty.</p>
+                <p><strong>Duration:</strong> 1 Day Trip</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+        
+        <div class="platform-card" style="background-image: url('image/Mawsynram.png');">
+            <div class="platform-content">
+                <h3>Mawsynram Exploration</h3>
+                <p>Discover the world's wettest place surrounded by lush greenery.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/Laitlum.jpg');">
+            <div class="platform-content">
+                <h3>Laitlum Canyons Trekking</h3>
+                <p>Experience stunning views and trekking trails at Laitlum Canyons.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/NONGRIAT.jpeg');">
+            <div class="platform-content">
+                <h3>Nongriat Living Root Bridge Trek</h3>
+                <p>Embark on an adventurous trek to the famous living root bridges.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/Shnongpdeng.jpg');">
+            <div class="platform-content">
+                <h3>Shnongpdeng Water Sports</h3>
+                <p>Enjoy thrilling water sports in the picturesque village of Shnongpdeng.</p>
+                <p><strong>Duration:</strong> 1 Day Trip</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ticket Booking Platforms Section -->
+<div class="section1">
+    <h2>Ticket Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/irctc.jpg');">
+            <div class="platform-content">
+                <h3>IRCTC</h3>
+                <p>Book train tickets across India for your journey to Meghalaya.</p>
+                <a href="https://www.irctc.co.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/ixigo.png');">
+            <div class="platform-content">
+                <h3>ixigo</h3>
+                <p>Book train and flight tickets across India through ixigo.</p>
+                <a href="https://www.ixigo.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book train, bus, and flight tickets across India with ease through MakeMyTrip.</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hotel Booking Platforms Section -->
+<div class="section2">
+    <h2>Hotel Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/goibibo.jpeg');">
+            <div class="platform-content">
+                <h3>goibibo</h3>
+                <p>Book your stay across Meghalaya through goibibo.</p>
+                <a href="https://www.goibibo.com/hotels/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/agoda.png');">
+            <div class="platform-content">
+                <h3>Agoda</h3>
+                <p>Book hotels across India for a comfortable stay with ease through Agoda.</p>
+                <a href="https://www.agoda.com/en-in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/trivago.jpg');">
+            <div class="platform-content">
+                <h3>Trivago</h3>
+                <p>Find the best hotel deals for Meghalaya through Trivago.</p>
+                <a href="https://www.trivago.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 TravelSaathi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner - West Bengal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f8ff;
+        }
+        header {
+            background-color: #126de4;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: #fff;
+            color: #126de4;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ddd;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #e6e6fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+        .platform-card {
+            min-width: 300px;
+            flex: 0 0 auto;
+            height: 350px;
+            background-size: contain;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: white;
+            position: relative;
+        }
+        .platform-card:hover {
+            transform: scale(1.05);
+        }
+        .platform-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .platform-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .platform-content p {
+            margin: 10px 0;
+        }
+        .platform-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #126de4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .platform-content a:hover {
+            background-color: #256328;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to your Travel Saathi in West Bengal</h1>
+    <a href="index.html" class="back-button">Back</a>
+    <p>Discover the rich cultural heritage, serene landscapes, and vibrant cities of West Bengal with us!</p>
+</header>
+
+<!-- Explore by Destination Section -->
+<div class="section">
+    <h2>Explore by Destination</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/kolkata.jpg');">
+            <div class="platform-content">
+                <h3>Kolkata</h3>
+                <p>"The cultural capital of India, known for its colonial architecture and vibrant arts scene."</p>
+                <a href="https://www.wbtourism.gov.in/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/sundarbans.jpg');">
+            <div class="platform-content">
+                <h3>Sundarbans</h3>
+                <p>"Home to the famous Royal Bengal Tiger and a UNESCO World Heritage Site."</p>
+                <a href="https://wbtourism.gov.in/topDestination/details1?template_id=1&id=638f90b09e20437bfb0ce140" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/darjeeling.jpg');">
+            <div class="platform-content">
+                <h3>Darjeeling</h3>
+                <p>"Renowned for its tea gardens and panoramic views of the Himalayas."</p>
+                <a href="https://darjeeling.gov.in/tourism/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/birbhum.jpg');">
+            <div class="platform-content">
+                <h3>Birbhum</h3>
+                <p>"Known for its folk culture and the famous town of Santiniketan."</p>
+                <a href="https://birbhum.gov.in/tourism/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/bankura.jpg');">
+            <div class="platform-content">
+                <h3>Bankura</h3>
+                <p>"Famous for its picturesque landscapes and terracotta temples."</p>
+                <a href="https://bankuratourism.com/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/mandarmani.webp');">
+            <div class="platform-content">
+                <h3>Mandarmani</h3>
+                <p>"A popular beach destination known for its tranquil ambiance and sea views."</p>
+                <a href="https://www.wbtourism.gov.in/Coastal/details?template_id=1&id=638f91549e20437bfb0ce146" target="_blank">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tour Packages Section for West Bengal -->
+<div class="section">
+    <h2>Tour Packages in West Bengal</h2>
+    <div class="container">
+        <!-- Kolkata Heritage Tour -->
+        <div class="platform-card" style="background-image: url('image/kolkata.jpg');">
+            <div class="platform-content">
+                <h3>Kolkata Heritage Tour</h3>
+                <p>Explore the historic landmarks, museums, and vibrant street food of Kolkata.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Sundarbans Adventure Tour -->
+        <div class="platform-card" style="background-image: url('image/sundarbans.jpg');">
+            <div class="platform-content">
+                <h3>Sundarbans Adventure Tour</h3>
+                <p>Experience the unique ecosystem of the Sundarbans, a UNESCO World Heritage Site.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Darjeeling Tea Tour -->
+        <div class="platform-card" style="background-image: url('image/darjeeling.jpg');">
+            <div class="platform-content">
+                <h3>Darjeeling Tea Tour</h3>
+                <p>Visit tea plantations and enjoy breathtaking views of the Himalayas.</p>
+                <p><strong>Duration:</strong> 4 Days / 3 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Birbhum Cultural Tour -->
+        <div class="platform-card" style="background-image: url('image/birbhum.jpg');">
+            <div class="platform-content">
+                <h3>Birbhum Cultural Tour</h3>
+                <p>Explore the rich folk culture and heritage of Santiniketan.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Bankura Temple Tour -->
+        <div class="platform-card" style="background-image: url('image/bankura.jpg');">
+            <div class="platform-content">
+                <h3>Bankura Temple Tour</h3>
+                <p>Visit ancient terracotta temples and enjoy scenic beauty.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Mandarmani Beach Tour -->
+        <div class="platform-card" style="background-image: url('image/mandarmani.webp');">
+            <div class="platform-content">
+                <h3>Mandarmani Beach Tour</h3>
+                <p>Relax on the serene beaches and enjoy water sports.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ticket Booking Platforms Section -->
+<div class="section">
+    <h2>Ticket Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/irctc.jpg');">
+            <div class="platform-content">
+                <h3>IRCTC</h3>
+                <p>Book train tickets across India for your journey to Tamil Nadu.</p>
+                <a href="https://www.irctc.co.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book train, bus, and flight tickets across India through MakeMyTrip.</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/redbus.png');">
+            <div class="platform-content">
+                <h3>redBus</h3>
+                <p>Book buses to explore Tamil Nadu and nearby regions through RedBus.</p>
+                <a href="https://www.redbus.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hotel Booking Platforms Section -->
+<div class="section">
+    <h2>Hotel Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/goibibo.jpeg');">
+            <div class="platform-content">
+                <h3>goibibo</h3>
+                <p>Book your stay across Tamil Nadu through goibibo.</p>
+                <a href="https://www.goibibo.com/hotels/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/oyo.png');">
+            <div class="platform-content">
+                <h3>OYO</h3>
+                <p>Find and book hotels for a comfortable stay in Tamil Nadu through OYO.</p>
+                <a href="https://www.oyorooms.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/agoda.png');">
+            <div class="platform-content">
+                <h3>Agoda</h3>
+                <p>Book hotels across India for a comfortable stay with ease through Agoda.</p>
+                <a href="https://www.agoda.com/en-in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 TravelSaathi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

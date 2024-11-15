@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner - Telangana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f8ff;
+        }
+        header {
+            background-color: #126de4;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: #fff;
+            color: #126de4;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ddd;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #e6e6fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+        .platform-card {
+            min-width: 300px;
+            flex: 0 0 auto;
+            height: 350px;
+            background-size: contain;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: white;
+            position: relative;
+        }
+        .platform-card:hover {
+            transform: scale(1.05);
+        }
+        .platform-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .platform-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .platform-content p {
+            margin: 10px 0;
+        }
+        .platform-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #126de4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .platform-content a:hover {
+            background-color: #256328;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to your Travel Saathi in Telangana</h1>
+    <a href="index.html" class="back-button">Back</a>
+    <p>Discover the vibrant culture, historic landmarks, and natural beauty of Telangana with us!</p>
+</header>
+
+<!-- Explore by Destination Section -->
+<div class="section">
+    <h2>Explore by Destination</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/hyderabad.jpg');">
+            <div class="platform-content">
+                <h3>Hyderabad</h3>
+                <p>"The City of Pearls, known for its rich history and delicious cuisine."</p>
+                <a href="https://www.hyderabadtourism.in/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/warangal.jpg');">
+            <div class="platform-content">
+                <h3>Warangal</h3>
+                <p>"Home to the historic Warangal Fort and thousand-pillar temple."</p>
+                <a href="https://warangaltourism.in/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/nalgonda.jpg');">
+            <div class="platform-content">
+                <h3>Nalgonda</h3>
+                <p>"Famous for its ancient fort and beautiful lakes."</p>
+                <a href="https://nalgonda.telangana.gov.in/tourism/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/khammam.jpg');">
+            <div class="platform-content">
+                <h3>Khammam</h3>
+                <p>"Known for its historic temples and serene landscapes."</p>
+                <a href="https://khammam.telangana.gov.in/tourism/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/medak.jpg');">
+            <div class="platform-content">
+                <h3>Medak</h3>
+                <p>"Famous for the stunning Medak Cathedral and historical fort."</p>
+                <a href="https://medak.telangana.gov.in/tourist-places/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/pedapalli.jpg');">
+            <div class="platform-content">
+                <h3>Peddapalli</h3>
+                <p>"Rich in culture and known for its temples and festivals."</p>
+                <a href="https://peddapalli.telangana.gov.in/tourist-places/" target="_blank">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tour Packages Section for Telangana -->
+<div class="section">
+    <h2>Tour Packages in Telangana</h2>
+    <div class="container">
+        <!-- Hyderabad Heritage Tour -->
+        <div class="platform-card" style="background-image: url('image/hyderabad.jpg');">
+            <div class="platform-content">
+                <h3>Hyderabad Heritage Tour</h3>
+                <p>Explore the historical sites, including Charminar, Golconda Fort, and delicious Hyderabadi Biryani.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Warangal Cultural Tour -->
+        <div class="platform-card" style="background-image: url('image/warangal.jpg');">
+            <div class="platform-content">
+                <h3>Warangal Cultural Tour</h3>
+                <p>Visit the magnificent Warangal Fort and the iconic Thousand Pillar Temple.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Nalgonda Nature Tour -->
+        <div class="platform-card" style="background-image: url('image/nalgonda.jpg');">
+            <div class="platform-content">
+                <h3>Nalgonda Nature Tour</h3>
+                <p>Discover the serene landscapes and historical sites of Nalgonda.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Khammam Temple Tour -->
+        <div class="platform-card" style="background-image: url('image/khammam.jpg');">
+            <div class="platform-content">
+                <h3>Khammam Temple Tour</h3>
+                <p>Experience the rich temple architecture and vibrant culture of Khammam.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.htmlml" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Medak Historical Tour -->
+        <div class="platform-card" style="background-image: url('image/medak.jpg');">
+            <div class="platform-content">
+                <h3>Medak Historical Tour</h3>
+                <p>Visit the stunning Medak Cathedral and explore the nearby fort.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Peddapalli Cultural Tour -->
+        <div class="platform-card" style="background-image: url('image/pedapalli.jpg');">
+            <div class="platform-content">
+                <h3>Peddapalli Cultural Tour</h3>
+                <p>Dive into the local culture and festivals of Peddapalli.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ticket Booking Platforms Section -->
+<div class="section">
+    <h2>Ticket Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/irctc.jpg');">
+            <div class="platform-content">
+                <h3>IRCTC</h3>
+                <p>Book train tickets across India for your journey to Tamil Nadu.</p>
+                <a href="https://www.irctc.co.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book train, bus, and flight tickets across India through MakeMyTrip.</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/redbus.png');">
+            <div class="platform-content">
+                <h3>redBus</h3>
+                <p>Book buses to explore Tamil Nadu and nearby regions through RedBus.</p>
+                <a href="https://www.redbus.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hotel Booking Platforms Section -->
+<div class="section">
+    <h2>Hotel Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/goibibo.jpeg');">
+            <div class="platform-content">
+                <h3>goibibo</h3>
+                <p>Book your stay across Tamil Nadu through goibibo.</p>
+                <a href="https://www.goibibo.com/hotels/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/oyo.png');">
+            <div class="platform-content">
+                <h3>OYO</h3>
+                <p>Find and book hotels for a comfortable stay in Tamil Nadu through OYO.</p>
+                <a href="https://www.oyorooms.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/agoda.png');">
+            <div class="platform-content">
+                <h3>Agoda</h3>
+                <p>Book hotels across India for a comfortable stay with ease through Agoda.</p>
+                <a href="https://www.agoda.com/en-in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 TravelSaathi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

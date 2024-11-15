@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner - Odisha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #d4b59e;
+        }
+        header {
+            background-color: #126de4;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: #fff;
+            color: #126de4;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ddd;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(180, 150, 125);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .section1 {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(200, 175, 160);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section1 h2 {
+            color: #333;
+        }
+        .section2 {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(220, 205, 180);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section2 h2 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+        .platform-card {
+            min-width: 300px;
+            flex: 0 0 auto;
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: white;
+            position: relative;
+        }
+        .platform-card:hover {
+            transform: scale(1.05);
+        }
+        .platform-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .platform-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .platform-content p {
+            margin: 10px 0;
+        }
+        .platform-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #126de4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .platform-content a:hover {
+            background-color: #256328;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to your Travel Saathi in Odisha</h1>
+    <a href="index.html" class="back-button">Back</a>
+    <p>Discover the unique heritage, beautiful temples, and scenic beaches of Odisha with us!</p>
+</header>
+
+<!-- Explore by Destination Section -->
+<div class="section">
+    <h2>Explore by Destination</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/puri.jpg');">
+            <div class="platform-content">
+                <h3>Puri</h3>
+                <p>"Home to the famous Jagannath Temple and stunning beaches."</p>
+                <a href="https://odishatourism.gov.in/content/tourism/en/discover/major-cities/puri.html" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/konark.jpg');">
+            <div class="platform-content">
+                <h3>Konark</h3>
+                <p>"Known for the UNESCO World Heritage Site, the Sun Temple."</p>
+                <a href="https://www.orissatourism.org/konark-destination-guide/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/bhubaneshwar.jpg');">
+            <div class="platform-content">
+                <h3>Bhubaneswar</h3>
+                <p>"The Temple City of India, rich in history and architecture."</p>
+                <a href="https://odishatourism.gov.in/content/tourism/en/discover/major-cities/bhubaneswar.html" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/chilika.jpg');">
+            <div class="platform-content">
+                <h3>Chilika Lake</h3>
+                <p>"Asia's largest brackish water lagoon, a paradise for birdwatchers."</p>
+                <a href="https://www.orissatourism.org/chilika-destination-guide/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/simlipal.jpg');">
+            <div class="platform-content">
+                <h3>Similipal National Park</h3>
+                <p>"A major tiger reserve and wildlife sanctuary in Odisha."</p>
+                <a href="https://www.similipal.org/#view-1" target="_blank">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Tour Packages Section for Odisha -->
+<div class="section">
+    <h2>Tour Packages in Odisha</h2>
+    <div class="container">
+        <!-- Puri Beach and Jagannath Temple Tour -->
+        <div class="platform-card" style="background-image: url('image/puri.jpg');">
+            <div class="platform-content">
+                <h3>Puri Beach and Jagannath Temple</h3>
+                <p>Visit the iconic Jagannath Temple and relax on the beautiful beaches of Puri.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Konark Sun Temple and Chandrabhaga Beach Tour -->
+        <div class="platform-card" style="background-image: url('image/konark.jpg');">
+            <div class="platform-content">
+                <h3>Konark Sun Temple and Chandrabhaga Beach</h3>
+                <p>Explore the magnificent Sun Temple, a UNESCO World Heritage Site, and enjoy the serene Chandrabhaga Beach.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Bhubaneswar Temple Tour -->
+        <div class="platform-card" style="background-image: url('image/bhubaneshwar.jpg');">
+            <div class="platform-content">
+                <h3>Bhubaneswar Temple Tour</h3>
+                <p>Discover the rich history and architecture of Bhubaneswar, known as the Temple City of India.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Chilika Lake Bird Watching Tour -->
+        <div class="platform-card" style="background-image: url('image/chilika.jpg');">
+            <div class="platform-content">
+                <h3>Chilika Lake Bird Watching</h3>
+                <p>Experience the beauty of Asia's largest brackish water lagoon, perfect for birdwatchers and nature lovers.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Similipal National Park Wildlife Safari -->
+        <div class="platform-card" style="background-image: url('image/simlipal.jpg');">
+            <div class="platform-content">
+                <h3>Similipal National Park Safari</h3>
+                <p>Embark on a wildlife safari in one of India's major tiger reserves, exploring its diverse flora and fauna.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Cuttack Heritage Tour -->
+        <div class="platform-card" style="background-image: url('image/cuttak.jpg');">
+            <div class="platform-content">
+                <h3>Cuttack Heritage Tour</h3>
+                <p>Explore the historic city of Cuttack, known for its unique silver filigree work and ancient forts.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Nandankanan Zoological Park and Botanical Garden Tour -->
+        <div class="platform-card" style="background-image: url('image/nandankanan.jpg');">
+            <div class="platform-content">
+                <h3>Nandankanan Zoological Park Tour</h3>
+                <p>Visit Nandankanan, a unique zoo and botanical garden, famous for its white tigers and natural habitat.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Udayagiri and Khandagiri Caves Tour -->
+        <div class="platform-card" style="background-image: url('image/udaigiri.jpg');">
+            <div class="platform-content">
+                <h3>Udayagiri and Khandagiri Caves Tour</h3>
+                <p>Explore the ancient rock-cut caves that date back to the 2nd century BC and learn about their historical significance.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Barbil and Keonjhar Nature Tour -->
+        <div class="platform-card" style="background-image: url('image/keonjhar.jpg');">
+            <div class="platform-content">
+                <h3>Barbil and Keonjhar Nature Tour</h3>
+                <p>Experience the natural beauty of Barbil and the Keonjhar hills, perfect for trekking and exploring waterfalls.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ticket Booking Platforms Section -->
+<div class="section1">
+    <h2>Ticket Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/irctc.jpg');">
+            <div class="platform-content">
+                <h3>IRCTC</h3>
+                <p>Book train tickets across India for your journey to Odisha.</p>
+                <a href="https://www.irctc.co.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book train, bus, and flight tickets across India with ease through MakeMyTrip.</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/redbus.png');">
+            <div class="platform-content">
+                <h3>redBus</h3>
+                <p>Book buses to explore Odisha and nearby regions through RedBus.</p>
+                <a href="https://www.redbus.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/ixigo.png');">
+            <div class="platform-content">
+                <h3>ixigo</h3>
+                <p>Book train and flight tickets across India through ixigo.</p>
+                <a href="https://www.ixigo.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/abhibus.png');">
+            <div class="platform-content">
+                <h3>abhibus</h3>
+                <p>Book bus, train, and flight tickets across India through abhibus.</p>
+                <a href="https://www.abhibus.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hotel Booking Platforms Section -->
+<div class="section2">
+    <h2>Hotel Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/goibibo.jpeg');">
+            <div class="platform-content">
+                <h3>goibibo</h3>
+                <p>Book your stay across Odisha through goibibo.</p>
+                <a href="https://www.goibibo.com/hotels/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/oyo.png');">
+            <div class="platform-content">
+                <h3>OYO</h3>
+                <p>Find and book hotels for a comfortable stay in Odisha through OYO.</p>
+                <a href="https://www.oyorooms.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/agoda.png');">
+            <div class="platform-content">
+                <h3>Agoda</h3>
+                <p>Book hotels across India for a comfortable stay with ease through Agoda.</p>
+                <a href="https://www.agoda.com/en-in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 TravelSaathi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

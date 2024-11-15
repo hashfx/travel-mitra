@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner - Tripura</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f8ff;
+        }
+        header {
+            background-color: #126de4;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: #fff;
+            color: #126de4;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ddd;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #e6e6fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+        .platform-card {
+            min-width: 300px;
+            flex: 0 0 auto;
+            height: 350px;
+            background-size: contain;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: white;
+            position: relative;
+        }
+        .platform-card:hover {
+            transform: scale(1.05);
+        }
+        .platform-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .platform-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .platform-content p {
+            margin: 10px 0;
+        }
+        .platform-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #126de4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .platform-content a:hover {
+            background-color: #256328;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to your Travel Saathi in Tripura</h1>
+    <a href="index.html" class="back-button">Back</a>
+    <p>Discover the cultural richness and natural beauty of Tripura with us!</p>
+</header>
+
+<!-- Explore by Destination Section -->
+<div class="section">
+    <h2>Explore by Destination</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/agartala.jpg');">
+            <div class="platform-content">
+                <h3>Agartala</h3>
+                <p>"The capital city known for its beautiful palaces and temples."</p>
+                <a href="https://tripuratourism.gov.in/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/unakoti.jpg');">
+            <div class="platform-content">
+                <h3>Unakoti</h3>
+                <p>"Famous for ancient rock carvings and sculptures."</p>
+                <a href="https://unakoti.nic.in/tourist-places/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/khumulwng.jpg');">
+            <div class="platform-content">
+                <h3>Khumlung</h3>
+                <p>"The capital of the Tripuri kings, rich in heritage and history."</p>
+                <a href="https://tripuratourism.gov.in/single-tour.php?id=22" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/sepahijala.jpg');">
+            <div class="platform-content">
+                <h3>Sepahijala Wildlife Sanctuary</h3>
+                <p>"A paradise for bird watchers and nature lovers."</p>
+                <a href="https://sepahijala.nic.in/tourist-place/sepahijala-wildlife-santuary/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <!-- <div class="platform-card" style="background-image: url('image/ramthakur.jpg');">
+            <div class="platform-content">
+                <h3>Ram Thakur Ashram</h3>
+                <p>"A serene place for meditation and peace."</p>
+                <a href="https://tripuratourism.gov.in/destination/ramthakur" target="_blank">Learn more</a>
+            </div>
+        </div> -->
+        <div class="platform-card" style="background-image: url('image/neermahal.jpg');">
+            <div class="platform-content">
+                <h3>Neermahal</h3>
+                <p>"The beautiful water palace in the middle of Lake Rudrasagar."</p>
+                <a href="https://tripuratourism.gov.in/single-tour.php?id=8" target="_blank">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tour Packages Section for Tripura -->
+<div class="section">
+    <h2>Tour Packages in Tripura</h2>
+    <div class="container">
+        <!-- Agartala City Tour -->
+        <div class="platform-card" style="background-image: url('image/agartala.jpg');">
+            <div class="platform-content">
+                <h3>Agartala City Tour</h3>
+                <p>Explore the capital city, visit historic sites and temples.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Unakoti Heritage Tour -->
+        <div class="platform-card" style="background-image: url('image/unakoti.jpg');">
+            <div class="platform-content">
+                <h3>Unakoti Heritage Tour</h3>
+                <p>Visit the ancient rock carvings and learn about the local culture.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Sepahijala Nature Tour -->
+        <div class="platform-card" style="background-image: url('image/sepahijala.jpg');">
+            <div class="platform-content">
+                <h3>Sepahijala Nature Tour</h3>
+                <p>Explore the wildlife sanctuary and enjoy bird watching.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Khumlung Cultural Tour -->
+        <div class="platform-card" style="background-image: url('image/khumulwng.jpg');">
+            <div class="platform-content">
+                <h3>Khumlung Cultural Tour</h3>
+                <p>Experience the heritage and history of the Tripuri kings.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Neermahal Boat Tour -->
+        <div class="platform-card" style="background-image: url('image/neermahal.jpg');">
+            <div class="platform-content">
+                <h3>Neermahal Boat Tour</h3>
+                <p>Enjoy a boat ride at the stunning water palace.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ticket Booking Section -->
+<div class="section">
+    <h2>Ticket Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book your flights, hotels, and holiday packages.</p>
+                <a href="https://www.makemytrip.com" target="_blank">Visit MakeMyTrip</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/yatra.png');">
+            <div class="platform-content">
+                <h3>Yatra</h3>
+                <p>Your travel companion for flights, hotels, and tours.</p>
+                <a href="https://www.yatra.com" target="_blank">Visit Yatra</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/goibibo.jpeg');">
+            <div class="platform-content">
+                <h3>Goibibo</h3>
+                <p>Get the best deals on hotels and flights.</p>
+                <a href="https://www.goibibo.com" target="_blank">Visit Goibibo</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hotel Booking Section -->
+<div class="section">
+    <h2>Hotel Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/oyo.png');">
+            <div class="platform-content">
+                <h3>OYO Rooms</h3>
+                <p>Find affordable and comfortable stays.</p>
+                <a href="https://www.oyorooms.com" target="_blank">Visit OYO</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip Hotels</h3>
+                <p>Book hotels for your stay in Tripura.</p>
+                <a href="https://www.makemytrip.com/hotels/" target="_blank">Visit MakeMyTrip</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/trivago.svg');">
+            <div class="platform-content">
+                <h3>Trivago</h3>
+                <p>Compare hotel prices and find the best deals.</p>
+                <a href="https://www.trivago.in/" target="_blank">Visit Trivago</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Travel Planner - Tripura. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

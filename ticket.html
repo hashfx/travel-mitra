@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #6a11e6;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #c9e265;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+        .platform-card {
+            min-width: 300px;
+            flex: 0 0 auto;
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: relative;
+            color: white;
+        }
+        .platform-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+        }
+        .platform-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #126de4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .platform-content a:hover {
+            background-color: #388E3C;
+        }
+        .form-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+        .form-section h2 {
+            text-align: center;
+            color: #333;
+        }
+        .passenger-form-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .passenger-form-group input, .passenger-form-group select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .add-passenger-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #126de4;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .add-passenger-btn:hover {
+            background-color: #388E3C;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+    </style>
+    <script>
+        function addPassenger() {
+            const container = document.getElementById('passenger-container');
+            const newPassenger = document.createElement('div');
+            newPassenger.classList.add('passenger-form-group');
+            newPassenger.innerHTML = `
+                <input type="text" name="name[]" placeholder="Name" required>
+                <input type="number" name="age[]" placeholder="Age" min="1" required>
+                <select name="gender[]" required>
+                    <option value="" disabled selected>Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            `;
+            container.appendChild(newPassenger);
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Travel Planner</h1>
+</header>
+
+<section class="form-section">
+    <h2>Passenger Details</h2>
+    <form>
+        <div id="passenger-container">
+            <div class="passenger-form-group">
+                <input type="text" name="name[]" placeholder="Name" required>
+                <input type="number" name="age[]" placeholder="Age" min="1" required>
+                <select name="gender[]" required>
+                    <option value="" disabled selected>Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="add-passenger-btn" onclick="addPassenger()">+ Add Another Passenger</div>
+    </form>
+</section>
+
+<section class="section">
+    <h2>Ticket Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/irctc.jpg');">
+            <div class="platform-content">
+                <h3>IRCTC</h3>
+                <p>Book train tickets across India with ease through IRCTC.</p>
+                <a href="https://www.irctc.co.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/redbus.png');">
+            <div class="platform-content">
+                <h3>redBus</h3>
+                <p>Book trains and buses with guaranteed seats across India with redBus.</p>
+                <a href="https://www.redbus.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book train, bus, and flight tickets easily across India with MakeMyTrip.</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/ixigo.png');">
+            <div class="platform-content">
+                <h3>ixigo</h3>
+                <p>>Book train & Flight  tickets across India with ease through ixigo.</p>
+                <a href="https://www.ixigo.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/abhibus.png');">
+            <div class="platform-content">
+                <h3>abhibus</h3>
+                <p>Book Bus, train & flight tickets across India with ease through abhibus.</p>
+                <a href="https://www.abhibus.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer>
+    &copy; 2024 Travel Planner. All Rights Reserved.
+</footer>
+
+</body>
+</html>

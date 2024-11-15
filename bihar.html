@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner - Bihar</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e6ba0c;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #00a3ff, #4caf50);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: #fff;
+            color: #126de4;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ddd;
+        }
+        .section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1200px;
+            border-radius: 10px;
+            background-color: #0d96ae;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-bottom: 15px;
+            font-size: 1.6em;
+            color: #0d4af2;
+        }
+        .container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+        .platform-card {
+            min-width: 350px;
+            flex: 0 0 auto;
+            height: 400px;
+            background-size: contain;
+            background-position: center;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            color: rgb(249, 246, 246);
+        }
+        .platform-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(222, 56, 56, 0.3);
+        }
+        .platform-content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .platform-content h3 {
+            font-size: 1.4em;
+            margin-bottom: 5px;
+        }
+        .platform-content p {
+            font-size: 0.95em;
+            line-height: 1.5;
+            margin: 8px 0;
+        }
+        .platform-content a {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #4caf50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+        .platform-content a:hover {
+            background-color: #388e3c;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Your Travel Saathi in Bihar</h1>
+    <a href="index.html" class="back-button">Back</a>
+    <p>Plan your journey through Bihar's rich culture, heritage, and natural beauty!</p>
+</header>
+
+<!-- Explore Bihar Destinations Section -->
+<div class="section">
+    <h2>Explore Bihar Destinations</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/bodhgaya.jpg');">
+            <div class="platform-content">
+                <h3>Bodh Gaya</h3>
+                <p>“The land of enlightenment and serenity, Bodh Gaya is a must-visit for spiritual seekers.”</p>
+                <a href="https://bodhgaya.bih.nic.in/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/nalanda.jpg');">
+            <div class="platform-content">
+                <h3>Nalanda</h3>
+                <p>"Discover the ruins of the ancient Nalanda University, a UNESCO World Heritage site."</p>
+                <a href="https://nalanda.nic.in/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/rajgir.webp');">
+            <div class="platform-content">
+                <h3>Rajgir</h3>
+                <p>“A historic town with ancient monuments and scenic hills, perfect for explorers.”</p>
+                <a href="https://nalanda.nic.in/rajgir/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/vaishali.jpg');">
+            <div class="platform-content">
+                <h3>Vaishali</h3>
+                <p>"A city steeped in Buddhist heritage, Vaishali is an emblem of peace and enlightenment."</p>
+                <a href="https://vaishali.nic.in/">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Tour Packages Section for Bihar -->
+<div class="section">
+    <h2>Tour Packages in Bihar</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/bodhgaya.jpg');">
+            <div class="platform-content">
+                <h3>Bodh Gaya Pilgrimage Tour</h3>
+                <p>Experience the spiritual essence of Bodh Gaya, where Buddha attained enlightenment.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html " target="_blank">Book Now</a>
+            </div>
+        </div>
+        
+        <div class="platform-card" style="background-image: url('image/patna.jpg');">
+            <div class="platform-content">
+                <h3>Patna Heritage Tour</h3>
+                <p>Discover the rich history and culture of Patna, the capital city of Bihar.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+        
+        <div class="platform-card" style="background-image: url('image/nalanda.jpg');">
+            <div class="platform-content">
+                <h3>Nalanda Ancient University Tour</h3>
+                <p>Explore the ruins of Nalanda University, a UNESCO World Heritage site.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+        
+        <div class="platform-card" style="background-image: url('image/rajgir.webp');">
+            <div class="platform-content">
+                <h3>Rajgir Heritage and Nature Tour</h3>
+                <p>Visit Rajgir to see its ancient ruins and enjoy the serene surroundings.</p>
+                <p><strong>Duration:</strong> 4 Days / 3 Nights</p>
+                <a href="ticket.html " target="_blank">Book Now</a>
+            </div>
+        </div>
+        
+        <div class="platform-card" style="background-image: url('image/vaishali.jpg');">
+            <div class="platform-content">
+                <h3>Vaishali Historical Tour</h3>
+                <p>Delve into the ancient history of Vaishali, known for its archaeological significance.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ticket Booking Platforms Section -->
+<div class="section">
+    <h2>Ticket Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/irctc.jpg');">
+            <div class="platform-content">
+                <h3>IRCTC</h3>
+                <p>Book your train tickets for journeys across Bihar and beyond through IRCTC.</p>
+                <a href="https://www.irctc.co.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Plan and book your entire Bihar travel itinerary easily on MakeMyTrip.</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/redbus.png');">
+            <div class="platform-content">
+                <h3>RedBus</h3>
+                <p>Book bus tickets to explore every corner of Bihar conveniently on RedBus.</p>
+                <a href="https://www.redbus.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        
+        <div class="platform-card" style="background-image: url('image/ixigo.png');">
+            <div class="platform-content">
+                <h3>ixigo</h3>
+                <p>>Book train & Flight  tickets across India with ease through ixigo.</p>
+                <a href="https://www.ixigo.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/abhibus.png');">
+            <div class="platform-content">
+                <h3>abhibus</h3>
+                <p>Book Bus, train & flight tickets across India with ease through abhibus.</p>
+                <a href="https://www.abhibus.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hotel Booking Platforms Section -->
+<div class="section">
+    <h2>Hotel Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/oyo.png');">
+            <div class="platform-content">
+                <h3>OYO</h3>
+                <p>Find budget-friendly hotels across Bihar with ease on OYO Rooms.</p>
+                <a href="https://www.oyorooms.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/goibibo.jpeg');">
+            <div class="platform-content">
+                <h3>Goibibo</h3>
+                <p>Book hotels, homestays, and more for your stay in Bihar through Goibibo.</p>
+                <a href="https://www.goibibo.com/hotels/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/agoda.png');">
+            <div class="platform-content">
+                <h3>Agoda</h3>
+                <p>Discover unique stays across Bihar with Agoda.</p>
+                <a href="https://www.agoda.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 TravelSaathi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner - Andaman & Nicobar Islands</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #00796b;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: #fff;
+            color: #126de4;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ddd;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(189, 239, 26);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+        .platform-card {
+            min-width: 400px;
+            flex: 0 0 auto;
+            height: 450px;
+            background-size: contain;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: white;
+            position: relative;
+        }
+        .platform-card:hover {
+            transform: scale(1.05);
+        }
+        .platform-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .platform-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .platform-content p {
+            margin: 10px 0;
+        }
+        .platform-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #126de4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .platform-content a:hover {
+            background-color: #388E3C;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to your Travel Saathi in Andaman & Nicobar Islands</h1>
+    <a href="index.html" class="back-button">Back</a>
+    <p>Plan your adventure in the breathtaking islands of Andaman & Nicobar!</p>
+</header>
+
+<!-- Explore by Island Section -->
+<div class="section">
+    <h2>Explore by Island</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/port\ blair.jpeg');">
+            <div class="platform-content">
+                <h3>Port Blair</h3>
+                <p>"The Gateway to the Andaman Islands"</p>
+                <a href="https://www.andamantourism.gov.in/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/havelock.jpg');">
+            <div class="platform-content">
+                <h3>Havelock Island</h3>
+                <p>"Pristine Beaches and Clear Waters"</p>
+                <a href="https://www.andamantourism.gov.in/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/neil\ island.webp');">
+            <div class="platform-content">
+                <h3>Neil Island</h3>
+                <p>"Tranquil and Stunning Coral Reefs"</p>
+                <a href="https://www.andamantourism.gov.in/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/rangat.jpg');">
+            <div class="platform-content">
+                <h3>Rangat</h3>
+                <p>"Lush Mangroves and Eco Parks"</p>
+                <a href="https://www.andamantourism.gov.in/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/diglipur.jpg');">
+            <div class="platform-content">
+                <h3>Diglipur</h3>
+                <p>"Home to Saddle Peak, the Highest Point in Andaman"</p>
+                <a href="https://www.andamantourism.gov.in/">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Tour Packages in Andaman and Nicobar</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/port\ blair.jpeg');">
+            <div class="platform-content">
+                <h3>Port Blair City Tour</h3>
+                <p>Explore the capital city, its rich history, Cellular Jail, and scenic beaches.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/havelock.jpg');">
+            <div class="platform-content">
+                <h3>Havelock Island Beach Getaway</h3>
+                <p>Relax on pristine beaches, snorkel in clear waters, and enjoy vibrant marine life.</p>
+                <p><strong>Duration:</strong> 4 Days / 3 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/neil\ island.webp');">
+            <div class="platform-content">
+                <h3>Neil Island Coral Adventure</h3>
+                <p>Discover tranquil beaches and stunning coral reefs on this serene island.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/rangat.jpg');">
+            <div class="platform-content">
+                <h3>Rangat Eco-Tour</h3>
+                <p>Explore lush mangroves, eco-parks, and enjoy a peaceful retreat in nature.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/diglipur.jpg');">
+            <div class="platform-content">
+                <h3>Diglipur Adventure</h3>
+                <p>Experience Andaman’s highest peak, Saddle Peak, and the unique twin islands, Ross and Smith.</p>
+                <p><strong>Duration:</strong> 4 Days / 3 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Ticket Booking Platforms Section -->
+<div class="section">
+    <h2>Ticket Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/irctc.jpg');">
+            <div class="platform-content">
+                <h3>IRCTC</h3>
+                <p>Book tickets to and from the Andaman Islands through IRCTC.</p>
+                <a href="https://www.irctc.co.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book flights and hotels for your Andaman trip through MakeMyTrip.</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/ixigo.png');">
+            <div class="platform-content">
+                <h3>ixigo</h3>
+                <p>Plan your travel and stay across the Andaman Islands with ixigo.</p>
+                <a href="https://www.ixigo.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hotel Booking Platforms Section -->
+<div class="section">
+    <h2>Hotels Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/goibibo.jpeg');">
+            <div class="platform-content">
+                <h3>goibibo</h3>
+                <p>Book your stay in the Andaman Islands with goibibo.</p>
+                <a href="https://www.goibibo.com/hotels/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/oyo.png');">
+            <div class="platform-content">
+                <h3>OYO</h3>
+                <p>Find and book hotels for a relaxing stay in the Andaman Islands through OYO.</p>
+                <a href="https://www.oyorooms.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 TravelSaathi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

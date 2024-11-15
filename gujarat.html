@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner - Gujarat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: #fff;
+            color: #126de4;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ddd;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(189, 239, 26);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+        .platform-card {
+            min-width: 400px;
+            flex: 0 0 auto;
+            height: 450px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: white;
+            position: relative;
+        }
+        .platform-card:hover {
+            transform: scale(1.05);
+        }
+        .platform-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .platform-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .platform-content p {
+            margin: 10px 0;
+        }
+        .platform-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #126de4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .platform-content a:hover {
+            background-color: #388E3C;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to your Travel Saathi in Gujarat</h1>
+    <a href="index.html" class="back-button">Back</a>
+    <p>Explore the vibrant culture, heritage, and scenic beauty of Gujarat</p>
+</header>
+
+<!-- Explore by State Section -->
+<div class="section">
+    <h2>Explore by State</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/ahmedabad.webp');">
+            <div class="platform-content">
+                <h3>Ahmedabad</h3>
+                <p>"The Heart of Gujarat, blending tradition with modernity"</p>
+                <a href="https://www.gujarattourism.com/central-zone/ahmedabad.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/rann\ utsav.jpg');">
+            <div class="platform-content">
+                <h3>Rann of Kutch</h3>
+                <p>"The White Desert of India"</p>
+                <a href="https://www.gujarattourism.com/kutch-zone/kutch/great-rann-of-kutch.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/Somanath_Temple.jpg');">
+            <div class="platform-content">
+                <h3>Somnath</h3>
+                <p>"The Eternal Shrine of Lord Shiva"</p>
+                <a href="https://somnath.org/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/gir.avif');">
+            <div class="platform-content">
+                <h3>Gir National Park</h3>
+                <p>"The Last Abode of Asiatic Lions"</p>
+                <a href="https://www.gujarattourism.com/saurashtra/gir-somnath/gir-national-park1.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/dwaraka.webp');">
+            <div class="platform-content">
+                <h3>Dwarka</h3>
+                <p>"The Sacred Land of Lord Krishna"</p>
+                <a href="https://devbhumidwarka.nic.in/tourism/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/vadodara.webp');">
+            <div class="platform-content">
+                <h3>Vadodara</h3>
+                <p>"Where Heritage Meets Modernity"</p>
+                <a href="https://vadodara.nic.in/tourist-places/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/kevadia.jpg');">
+            <div class="platform-content">
+                <h3>Kevadia</h3>
+                <p>"Unity in Diversity, Nature at Its Best"</p>
+                <a href="https://narmada.nic.in/tourist-place/statue-of-unity-kevadia/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/diu.jpeg');">
+            <div class="platform-content">
+                <h3>Daman & Diu,Dadra & Nagar Haveli</h3>
+                <p>" Sun, Sand, and Serenity Await"</p>
+                <a href="https://dnhddtourism.in/">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Tour Packages Section for Gujarat -->
+<div class="section">
+    <h2>Tour Packages in Gujarat</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/ahmedabad.webp');">
+            <div class="platform-content">
+                <h3>Ahmedabad Heritage Tour</h3>
+                <p>Discover the rich cultural heritage and architectural marvels of Ahmedabad, a UNESCO World Heritage City.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+        
+        <div class="platform-card" style="background-image: url('image/rajkot.jpg');">
+            <div class="platform-content">
+                <h3>Rajkot City Experience</h3>
+                <p>Explore the vibrant city of Rajkot, known for its history and as the birthplace of Mahatma Gandhi.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+        
+        <div class="platform-card" style="background-image: url('image/kevadia.jpg');">
+            <div class="platform-content">
+                <h3>Kevadiya & Statue of Unity Tour</h3>
+                <p>Visit the world's tallest statue and explore the breathtaking surroundings of Kevadiya.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+        
+        <div class="platform-card" style="background-image: url('image/Saputara.jpg');">
+            <div class="platform-content">
+                <h3>Saputara Hill Station Retreat</h3>
+                <p>Escape to the serene hill station of Saputara, known for its lush greenery and pleasant climate.</p>
+                <p><strong>Duration:</strong> 4 Days / 3 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+        
+        <div class="platform-card" style="background-image: url('image/gir.avif');">
+            <div class="platform-content">
+                <h3>Gir National Park Safari</h3>
+                <p>Embark on an adventurous safari in Gir National Park, home to the Asiatic lion.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ticket Booking Platforms Section -->
+<div class="section">
+    <h2>Ticket Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/irctc.jpg');">
+            <div class="platform-content">
+                <h3>IRCTC</h3>
+                <p>Book train tickets across India with ease through IRCTC.</p>
+                <a href="https://www.irctc.co.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/redbus.png');">
+            <div class="platform-content">
+                <h3>redBus</h3>
+                <p>Book bus tickets across India with ease through RedBus.</p>
+                <a href="https://www.redbus.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book train, bus, and flight tickets with ease through MakeMyTrip.</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/ixigo.png');">
+            <div class="platform-content">
+                <h3>ixigo</h3>
+                <p>Book train and flight tickets across India with ease through ixigo.</p>
+                <a href="https://www.ixigo.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/abhibus.png');">
+            <div class="platform-content">
+                <h3>Abhibus</h3>
+                <p>Book bus, train, and flight tickets across India with ease through Abhibus.</p>
+                <a href="https://www.abhibus.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hotels Booking Platforms Section -->
+<div class="section">
+    <h2>Hotel Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/goibibo.jpeg');">
+            <div class="platform-content">
+                <h3>Goibibo</h3>
+                <p>Book hotels across India for your safe stay with ease through Goibibo.</p>
+                <a href="https://www.goibibo.com/hotels/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/oyo.png');">
+            <div class="platform-content">
+                <h3>OYO</h3>
+                <p>Book hotels across India easily for your safe stay with ease through OYO.</p>
+                <a href="https://www.oyorooms.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book hotels with a guarantee across India with ease through MakeMyTrip.</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/agoda.png');">
+            <div class="platform-content">
+                <h3>Agoda</h3>
+                <p>Book hotels across India easily for a safe stay with Agoda.</p>
+                <a href="https://www.agoda.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 TravelSaathi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner - Sikkim</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #d6e9f0;
+        }
+        header {
+            background-color: #126de4;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: #fff;
+            color: #126de4;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ddd;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(129, 197, 202);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .section1 {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(147, 200, 178);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section1 h2 {
+            color: #333;
+        }
+        .section2 {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(152, 178, 225);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section2 h2 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+        .platform-card {
+            min-width: 300px;
+            flex: 0 0 auto;
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: white;
+            position: relative;
+        }
+        .platform-card:hover {
+            transform: scale(1.05);
+        }
+        .platform-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .platform-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .platform-content p {
+            margin: 10px 0;
+        }
+        .platform-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #126de4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .platform-content a:hover {
+            background-color: #256328;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to your Travel Saathi in Sikkim</h1>
+    <a href="index.html" class="back-button">Back</a>
+    <p>Discover the breathtaking landscapes and vibrant culture of Sikkim with us!</p>
+</header>
+
+<!-- Explore by Destination Section -->
+<div class="section">
+    <h2>Explore by Destination</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/gangtok.jpg');">
+            <div class="platform-content">
+                <h3>Gangtok</h3>
+                <p>"The capital city, known for its monasteries, and stunning views of Kanchenjunga."</p>
+                <a href="https://sikkimtourism.gov.in/Public/PlacesToGo/PopularAttractionDetails/PA20A002" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/pelling.jpg');">
+            <div class="platform-content">
+                <h3>Pelling</h3>
+                <p>"Famous for its panoramic views and Pemayangtse Monastery."</p>
+                <a href="https://sikkimtourism.gov.in/Public/PlacesToGo/PopularPlaceDetails/PA20A005" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/yumthang.jpg');">
+            <div class="platform-content">
+                <h3>Yumthang Valley</h3>
+                <p>"Known as the Valley of Flowers, a paradise for nature lovers."</p>
+                <a href="https://www.sikkimtourismindia.com/yumthang-valley.html" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/tsomgo.jpg');">
+            <div class="platform-content">
+                <h3>Tsomgo Lake</h3>
+                <p>"A glacial lake surrounded by snow-covered mountains."</p>
+                <a href="https://sikkimtourism.gov.in/Public/ExperienceSikkim/GetLakesDetailsById/28" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/lachung.jpg');">
+            <div class="platform-content">
+                <h3>Lachung</h3>
+                <p>"A charming village known for its scenic beauty and monasteries."</p>
+                <a href="https://www.tourmyindia.com/states/sikkim/lachung-tourism.html" target="_blank">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Tour Packages Section for Sikkim -->
+<div class="section">
+    <h2>Tour Packages in Sikkim</h2>
+    <div class="container">
+        <!-- Gangtok City Tour -->
+        <div class="platform-card" style="background-image: url('image/gangtok.jpg');">
+            <div class="platform-content">
+                <h3>Gangtok City Tour</h3>
+                <p>Explore the vibrant capital of Sikkim, visit monasteries, and enjoy panoramic views of Kanchenjunga.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Pelling Sightseeing Tour -->
+        <div class="platform-card" style="background-image: url('image/pelling.jpg');">
+            <div class="platform-content">
+                <h3>Pelling Sightseeing Tour</h3>
+                <p>Discover the beautiful landscapes and visit Pemayangtse Monastery with stunning views of the Himalayas.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Yumthang Valley Nature Tour -->
+        <div class="platform-card" style="background-image: url('image/yumthang.jpg');">
+            <div class="platform-content">
+                <h3>Yumthang Valley Nature Tour</h3>
+                <p>Visit the enchanting Valley of Flowers and soak in the stunning natural beauty and hot springs.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Tsomgo Lake and Baba Mandir Tour -->
+        <div class="platform-card" style="background-image: url('image/tsomgo.jpg');">
+            <div class="platform-content">
+                <h3>Tsomgo Lake and Baba Mandir Tour</h3>
+                <p>Experience the serene beauty of Tsomgo Lake and visit the revered Baba Mandir.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Lachung Scenic Retreat -->
+        <div class="platform-card" style="background-image: url('image/lachung.jpg');">
+            <div class="platform-content">
+                <h3>Lachung Scenic Retreat</h3>
+                <p>Explore the charming village of Lachung, known for its beautiful landscapes and rich culture.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Namchi Cultural Tour -->
+        <div class="platform-card" style="background-image: url('image/NAMCHI.jpg');">
+            <div class="platform-content">
+                <h3>Namchi Cultural Tour</h3>
+                <p>Visit the grand Siddheshwar Dham and enjoy panoramic views of the Kanchenjunga range.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Zuluk and Nathang Valley Tour -->
+        <div class="platform-card" style="background-image: url('image/zuluk.jpg');">
+            <div class="platform-content">
+                <h3>Zuluk and Nathang Valley Tour</h3>
+                <p>Experience the scenic beauty and unique landscape of Zuluk, a small hamlet along the old Silk Route.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Kanchenjunga Base Camp Trek -->
+        <div class="platform-card" style="background-image: url('image/kanchenjunga.jpg');">
+            <div class="platform-content">
+                <h3>Kanchenjunga Base Camp Trek</h3>
+                <p>Embark on an adventurous trek to the base of the third highest mountain in the world.</p>
+                <p><strong>Duration:</strong> 7 Days / 6 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Yuksom Historical Tour -->
+        <div class="platform-card" style="background-image: url('image/yuksom.jpg');">
+            <div class="platform-content">
+                <h3>Yuksom Historical Tour</h3>
+                <p>Discover the rich history of Sikkim and visit the historic Norbugang Park.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Ravangla Peace Park Tour -->
+        <div class="platform-card" style="background-image: url('image/ravangla.webp');">
+            <div class="platform-content">
+                <h3>Ravangla Peace Park Tour</h3>
+                <p>Relax in the serene environment of the Peace Park and enjoy views of the Buddha statue.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ticket Booking Platforms Section -->
+<div class="section1">
+    <h2>Ticket Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/irctc.jpg');">
+            <div class="platform-content">
+                <h3>IRCTC</h3>
+                <p>Book train tickets across India for your journey to Sikkim.</p>
+                <a href="https://www.irctc.co.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book train, bus, and flight tickets across India with ease through MakeMyTrip.</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/redbus.png');">
+            <div class="platform-content">
+                <h3>redBus</h3>
+                <p>Book buses to explore Sikkim and nearby regions through RedBus.</p>
+                <a href="https://www.redbus.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/ixigo.png');">
+            <div class="platform-content">
+                <h3>ixigo</h3>
+                <p>Book train and flight tickets across India through ixigo.</p>
+                <a href="https://www.ixigo.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/abhibus.png');">
+            <div class="platform-content">
+                <h3>abhibus</h3>
+                <p>Book bus, train, and flight tickets across India through abhibus.</p>
+                <a href="https://www.abhibus.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hotel Booking Platforms Section -->
+<div class="section2">
+    <h2>Hotel Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/goibibo.jpeg');">
+            <div class="platform-content">
+                <h3>goibibo</h3>
+                <p>Book your stay across Sikkim through goibibo.</p>
+                <a href="https://www.goibibo.com/hotels/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/oyo.png');">
+            <div class="platform-content">
+                <h3>OYO</h3>
+                <p>Find and book hotels for a comfortable stay in Sikkim through OYO.</p>
+                <a href="https://www.oyorooms.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/agoda.png');">
+            <div class="platform-content">
+                <h3>Agoda</h3>
+                <p>Book hotels across India for a comfortable stay with ease through Agoda.</p>
+                <a href="https://www.agoda.com/en-in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 TravelSaathi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

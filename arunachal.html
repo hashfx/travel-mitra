@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner - Arunachal Pradesh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #00796b;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: #fff;
+            color: #126de4;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ddd;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(189, 239, 26);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+        .platform-card {
+            min-width: 400px;
+            flex: 0 0 auto;
+            height: 450px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: white;
+            position: relative;
+        }
+        .platform-card:hover {
+            transform: scale(1.05);
+        }
+        .platform-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .platform-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .platform-content p {
+            margin: 10px 0;
+        }
+        .platform-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #126de4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .platform-content a:hover {
+            background-color: #388E3C;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to your Travel Saathi in Arunachal Pradesh</h1>
+    <a href="index.html" class="back-button">Back</a>
+    <p>Plan your journey through the scenic landscapes and rich culture of Arunachal Pradesh</p>
+</header>
+
+<!-- Explore by Destination Section -->
+<div class="section">
+    <h2>Explore by Destination</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/tawang.jpg');">
+            <div class="platform-content">
+                <h3>Tawang</h3>
+                <p>"The Land of the Monpa Tribes and Stunning Monasteries"</p>
+                <a href="https://arunachaltourism.com/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/ziro.avif');">
+            <div class="platform-content">
+                <h3>Ziro Valley</h3>
+                <p>"Green Valleys, Tribal Culture, and Annual Music Festival"</p>
+                <a href="https://arunachaltourism.com/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/itanagar.avif');">
+            <div class="platform-content">
+                <h3>Itanagar</h3>
+                <p>"Capital City with Rich History and Cultural Heritage"</p>
+                <a href="https://arunachaltourism.com/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/bomdila.jpg');">
+            <div class="platform-content">
+                <h3>Bomdila</h3>
+                <p>"Majestic Views of the Eastern Himalayas"</p>
+                <a href="https://arunachaltourism.com/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/roing.png');">
+            <div class="platform-content">
+                <h3>Roing</h3>
+                <p>"A Paradise for Nature Lovers and Adventure Seekers"</p>
+                <a href="https://arunachaltourism.com/">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tour Packages Section for Arunachal Pradesh -->
+<div class="section">
+    <h2>Tour Packages in Arunachal Pradesh</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/tawang.jpg');">
+            <div class="platform-content">
+                <h3>Tawang Monastery & Cultural Tour</h3>
+                <p>Experience the vibrant culture of the Monpa tribes and the beauty of Tawang’s monasteries.</p>
+                <p><strong>Duration:</strong> 4 Days / 3 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+        
+        <div class="platform-card" style="background-image: url('image/ziro.avif');">
+            <div class="platform-content">
+                <h3>Ziro Valley Music & Culture Experience</h3>
+                <p>Explore the lush landscapes and traditional culture of Ziro Valley, including the annual music festival.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+        
+        <div class="platform-card" style="background-image: url('image/itanagar.avif');">
+            <div class="platform-content">
+                <h3>Historic Itanagar & Cultural Heritage Tour</h3>
+                <p>Discover the historical sites and cultural richness of Arunachal Pradesh’s capital city.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+        
+        <div class="platform-card" style="background-image: url('image/bomdila.jpg');">
+            <div class="platform-content">
+                <h3>Bomdila & Eastern Himalayas Adventure</h3>
+                <p>Enjoy breathtaking views of the Eastern Himalayas and explore the peaceful town of Bomdila.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+        
+        <div class="platform-card" style="background-image: url('image/roing.png');">
+            <div class="platform-content">
+                <h3>Roing Nature & Adventure Retreat</h3>
+                <p>Experience nature at its best in Roing, with plenty of activities for adventure seekers.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Ticket Booking Platforms Section -->
+<div class="section">
+    <h2>Ticket Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/irctc.jpg');">
+            <div class="platform-content">
+                <h3>IRCTC</h3>
+                <p>Book tickets for easy access to Arunachal Pradesh through IRCTC.</p>
+                <a href="https://www.irctc.co.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book flights, hotels, and more for your journey through Arunachal Pradesh.</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/ixigo.png');">
+            <div class="platform-content">
+                <h3>ixigo</h3>
+                <p>Plan your travel and stay across Arunachal Pradesh with ixigo.</p>
+                <a href="https://www.ixigo.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hotel Booking Platforms Section -->
+<div class="section">
+    <h2>Hotel Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/goibibo.jpeg');">
+            <div class="platform-content">
+                <h3>goibibo</h3>
+                <p>Find comfortable stays across Arunachal Pradesh with goibibo.</p>
+                <a href="https://www.goibibo.com/hotels/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/oyo.png');">
+            <div class="platform-content">
+                <h3>OYO</h3>
+                <p>Book hotels easily for a peaceful stay across Arunachal Pradesh through OYO.</p>
+                <a href="https://www.oyorooms.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 TravelSaathi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

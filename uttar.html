@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner - Uttar Pradesh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f8ff;
+        }
+        header {
+            background-color: #126de4;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: #fff;
+            color: #126de4;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ddd;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #e6e6fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+        .platform-card {
+            min-width: 300px;
+            flex: 0 0 auto;
+            height: 350px;
+            background-size: contain;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: white;
+            position: relative;
+        }
+        .platform-card:hover {
+            transform: scale(1.05);
+        }
+        .platform-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .platform-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .platform-content p {
+            margin: 10px 0;
+        }
+        .platform-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #126de4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .platform-content a:hover {
+            background-color: #256328;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to your Travel Saathi in Uttar Pradesh</h1>
+    <a href="index.html" class="back-button">Back</a>
+    <p>Discover the rich history, culture, and spiritual heritage of Uttar Pradesh!</p>
+</header>
+
+<!-- Explore by Destination Section -->
+<div class="section">
+    <h2>Explore by Destination</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/agra.jpg');">
+            <div class="platform-content">
+                <h3>Agra & Mathura</h3>
+                <p>"Home to the iconic Taj Mahal, a UNESCO World Heritage site."</p>
+                <a href="https://agra.nic.in/tourism/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/varanasi.webp');">
+            <div class="platform-content">
+                <h3>Varanasi</h3>
+                <p>"The spiritual capital of India, known for its ghats and temples."</p>
+                <a href="https://varanasi.nic.in/tourism/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/lucknow.jpg');">
+            <div class="platform-content">
+                <h3>Lucknow</h3>
+                <p>"Famous for its rich history, architecture, and Awadhi cuisine."</p>
+                <a href="https://uptourism.gov.in/en/page/lucknow" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/khushinagar.jpg');">
+            <div class="platform-content">
+                <h3>Kushinagar</h3>
+                <p>"A significant Buddhist pilgrimage site, where Lord Buddha attained Mahaparinirvana."</p>
+                <a href="https://kushinagar.nic.in/tourist-places/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/ayodhaya.jpg');">
+            <div class="platform-content">
+                <h3>Ayodhya</h3>
+                <p>"The birthplace of Lord Rama, steeped in mythological significance."</p>
+                <a href="https://uptourism.gov.in/en/page/ayodhya" target="_blank">Learn more</a>
+            </div>
+        </div>
+        
+        <div class="platform-card" style="background-image: url('image/allahabad');">
+            <div class="platform-content">
+                <h3>Prayagraj</h3>
+                <p>"Snagam."</p>
+                <a href="https://prayagraj.nic.in/tourist-places/" target="_blank">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tour Packages Section for Uttar Pradesh -->
+<div class="section">
+    <h2>Tour Packages in Uttar Pradesh</h2>
+    <div class="container">
+        <!-- Agra Heritage Tour -->
+        <div class="platform-card" style="background-image: url('image/agra.jpg');">
+            <div class="platform-content">
+                <h3>Agra Heritage Tour</h3>
+                <p>Visit the Taj Mahal, Agra Fort, and experience Mughal history.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/allahabad.jpg');">
+            <div class="platform-content">
+                <h3>Prayagraj Heritage Tour</h3>
+                <p>Visit the sangam of Ganga, Yamuna & Saraswati.</p>
+                <p><strong>Duration:</strong> 1 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Varanasi Spiritual Tour -->
+        <div class="platform-card" style="background-image: url('image/varanasi.webp');">
+            <div class="platform-content">
+                <h3>Varanasi Spiritual Tour</h3>
+                <p>Experience the Ganga Aarti, visit Sarnath, and explore ancient temples.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Lucknow Cultural Tour -->
+        <div class="platform-card" style="background-image: url('image/lucknow.jpg');">
+            <div class="platform-content">
+                <h3>Lucknow Cultural Tour</h3>
+                <p>Explore historical sites, gardens, and indulge in delectable Awadhi cuisine.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Kushinagar Buddhist Tour -->
+        <div class="platform-card" style="background-image: url('image/khushinagar.jpg');">
+            <div class="platform-content">
+                <h3>Kushinagar Buddhist Tour</h3>
+                <p>Visit significant Buddhist sites, including the Mahaparinirvana Stupa.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Ayodhya Pilgrimage Tour -->
+        <div class="platform-card" style="background-image: url('image/ayodhaya.jpg');">
+            <div class="platform-content">
+                <h3>Ayodhya Pilgrimage Tour</h3>
+                <p>Discover the sacred city of Ayodhya and its rich cultural heritage.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        >
+    </div>
+</div>
+
+<!-- Ticket Booking Platforms Section -->
+<div class="section">
+    <h2>Ticket Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/irctc.jpg');">
+            <div class="platform-content">
+                <h3>IRCTC</h3>
+                <p>Book train tickets across India for your journey to Tamil Nadu.</p>
+                <a href="https://www.irctc.co.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book train, bus, and flight tickets across India through MakeMyTrip.</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/redbus.png');">
+            <div class="platform-content">
+                <h3>redBus</h3>
+                <p>Book buses to explore Tamil Nadu and nearby regions through RedBus.</p>
+                <a href="https://www.redbus.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hotel Booking Platforms Section -->
+<div class="section">
+    <h2>Hotel Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/goibibo.jpeg');">
+            <div class="platform-content">
+                <h3>goibibo</h3>
+                <p>Book your stay across Tamil Nadu through goibibo.</p>
+                <a href="https://www.goibibo.com/hotels/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/oyo.png');">
+            <div class="platform-content">
+                <h3>OYO</h3>
+                <p>Find and book hotels for a comfortable stay in Tamil Nadu through OYO.</p>
+                <a href="https://www.oyorooms.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/agoda.png');">
+            <div class="platform-content">
+                <h3>Agoda</h3>
+                <p>Book hotels across India for a comfortable stay with ease through Agoda.</p>
+                <a href="https://www.agoda.com/en-in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 TravelSaathi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner - Jharkhand</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #126de4;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: #fff;
+            color: #126de4;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ddd;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(189, 239, 26);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+        .platform-card {
+            min-width: 300px;
+            flex: 0 0 auto;
+            height: 350px;
+            background-size: contain;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: white;
+            position: relative;
+        }
+        .platform-card:hover {
+            transform: scale(1.05);
+        }
+        .platform-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .platform-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .platform-content p {
+            margin: 10px 0;
+        }
+        .platform-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #126de4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .platform-content a:hover {
+            background-color: #388E3C;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to your Travel Saathi in Jharkhand</h1>
+    <a href="index.html" class="back-button">Back</a>
+    <p>Discover the natural beauty, tribal culture, and rich history of Jharkhand with us!</p>
+</header>
+
+<!-- Explore by Destination Section -->
+<div class="section">
+    <h2>Explore by Destination</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/jonha.jpg');">
+            <div class="platform-content">
+                <h3>Ranchi</h3>
+                <p>"The City of Waterfalls and Hills"</p>
+                <a href="https://ranchi.nic.in/tourist-places/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/dhanbad.avif');">
+            <div class="platform-content">
+                <h3>Dhanbad</h3>
+                <p>"Known as the Coal Capital of India"</p>
+                <a href="https://dhanbad.nic.in/tourist-places/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/jublee.jpg');">
+            <div class="platform-content">
+                <h3>Jamshedpur</h3>
+                <p>"The Steel City with Beautiful Parks"</p>
+                <a href="https://jamshedpur.nic.in/tourist-places-2/tourist-places/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/netrahat.jpg');">
+            <div class="platform-content">
+                <h3>Netarhat</h3>
+                <p>"Known for its Stunning Sunsets and Hills"</p>
+                <a href="https://tourism.jharkhand.gov.in/how-to-reach/126/3">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/masanjoor.jpg');">
+            <div class="platform-content">
+                <h3>Masanjor</h3>
+                <p>"A Picturesque Dam Surrounded by Nature"</p>
+                <a href="https://dumka.nic.in/tourist-place/masanjore-dam/">Learn more</a>
+            </div>
+        </div>
+        <!-- <div class="platform-card" style="background-image: url('image/chakradharpur.jpg');">
+            <div class="platform-content">
+                <h3>Chakradharpur</h3>
+                <p>"Famous for Its Natural Beauty and Tribal Culture"</p>
+                <a href="https://www.jharkhandtourism.gov.in/">Learn more</a>
+            </div>
+        </div> -->
+        <div class="platform-card" style="background-image: url('image/baidyanath.jpg');">
+            <div class="platform-content">
+                <h3>Baidyanath</h3>
+                <p>"Embrace the Blessings: Visit Baidyanath Jyotirling!"</p>
+                <a href="https://www.jharkhandtourism.gov.in/">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tour Packages Section for Jharkhand -->
+<div class="section">
+    <h2>Tour Packages in Jharkhand</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/jonha.jpg');">
+            <div class="platform-content">
+                <h3>Ranchi Nature Escape</h3>
+                <p>Discover the waterfalls and hills of Ranchi, the capital of Jharkhand.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/dhanbad.avif');">
+            <div class="platform-content">
+                <h3>Dhanbad Coal City Tour</h3>
+                <p>Explore the industrial heart of Jharkhand and visit its famous coal mines.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/jublee.jpg');">
+            <div class="platform-content">
+                <h3>Jamshedpur Parks & Culture</h3>
+                <p>Enjoy the lush parks and vibrant culture of Jamshedpur, known as the Steel City.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/netrahat.jpg');">
+            <div class="platform-content">
+                <h3>Netarhat Sunset Retreat</h3>
+                <p>Relax and witness the breathtaking sunsets in the serene hills of Netarhat.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/masanjoor.jpg');">
+            <div class="platform-content">
+                <h3>Masanjor Dam Experience</h3>
+                <p>Visit the picturesque Masanjor Dam and enjoy the beauty of nature.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/baidyanath.jpg');">
+            <div class="platform-content">
+                <h3>Baidyanath Pilgrimage Tour</h3>
+                <p>Experience spirituality at the famous Baidyanath Jyotirling, a sacred pilgrimage site.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/chakradharpur.avif');">
+            <div class="platform-content">
+                <h3>Chakradharpur Cultural Tour</h3>
+                <p>Explore the natural beauty and rich tribal culture of Chakradharpur.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Ticket Booking Platforms Section -->
+<div class="section">
+    <h2>Ticket Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/irctc.jpg');">
+            <div class="platform-content">
+                <h3>IRCTC</h3>
+                <p>Book train tickets across India for your Jharkhand journey through IRCTC.</p>
+                <a href="https://www.irctc.co.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/redbus.png');">
+            <div class="platform-content">
+                <h3>redBus</h3>
+                <p>Book buses to explore Jharkhand and nearby regions through RedBus.</p>
+                <a href="https://www.redbus.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book train, bus & flight tickets with ease across India through MakeMyTrip.</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/ixigo.png');">
+            <div class="platform-content">
+                <h3>ixigo</h3>
+                <p>Book train & flight tickets across India with ease through ixigo.</p>
+                <a href="https://www.ixigo.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/abhibus.png');">
+            <div class="platform-content">
+                <h3>abhibus</h3>
+                <p>Book bus, train & flight tickets across India with ease through abhibus.</p>
+                <a href="https://www.abhibus.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hotel Booking Platforms Section -->
+<div class="section">
+    <h2>Hotels Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/goibibo.jpeg');">
+            <div class="platform-content">
+                <h3>goibibo</h3>
+                <p>Book your stay across Jharkhand through goibibo.</p>
+                <a href="https://www.goibibo.com/hotels/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/oyo.png');">
+            <div class="platform-content">
+                <h3>OYO</h3>
+                <p>Find and book hotels for a comfortable stay in Jharkhand through OYO.</p>
+                <a href="https://www.oyorooms.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card

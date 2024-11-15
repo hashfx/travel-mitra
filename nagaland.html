@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner - Nagaland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #b5a07d;
+        }
+        header {
+            background-color: #126de4;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: #fff;
+            color: #126de4;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ddd;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(110, 108, 89);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .section1 {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(171, 157, 154);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section1 h2 {
+            color: #333;
+        }
+        .section2 {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(203, 178, 124);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section2 h2 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+        .platform-card {
+            min-width: 300px;
+            flex: 0 0 auto;
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: white;
+            position: relative;
+        }
+        .platform-card:hover {
+            transform: scale(1.05);
+        }
+        .platform-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .platform-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .platform-content p {
+            margin: 10px 0;
+        }
+        .platform-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #126de4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .platform-content a:hover {
+            background-color: #256328;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to your Travel Saathi in Nagaland</h1>
+    <a href="index.html" class="back-button">Back</a>
+    <p>Discover the scenic beauty, rich culture, and fascinating destinations of Nagaland!</p>
+</header>
+
+<!-- Explore by Destination Section -->
+<div class="section">
+    <h2>Explore by Destination</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/kohima\'.jpg');">
+            <div class="platform-content">
+                <h3>Kohima</h3>
+                <p>"The capital city known for historical significance and scenic landscapes."</p>
+                <a href="https://kohima.nic.in/tourist-places/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/dzukou.cms');">
+            <div class="platform-content">
+                <h3>Dzukou Valley</h3>
+                <p>"A beautiful valley known for trekking and breathtaking views."</p>
+                <a href="https://tourism.nagaland.gov.in/dzukou-valley/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/mon.webp');">
+            <div class="platform-content">
+                <h3>Mon</h3>
+                <p>"Explore the land of the Konyak tribe and unique cultural heritage."</p>
+                <a href="https://mon.nic.in/tourist-places/" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/Kohnoma.jpg');">
+            <div class="platform-content">
+                <h3>Khonoma Village</h3>
+                <p>"Asia's first green village, rich in biodiversity and traditional culture."</p>
+                <a href="https://www.rural.tourism.gov.in/Khonoma-Tribal-tourism.html" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/touphema.jpg');">
+            <div class="platform-content">
+                <h3>Tuophema Village</h3>
+                <p>"Experience traditional Naga culture in this picturesque village."</p>
+                <a href="https://kohima.nic.in/tourist-place/touphema-tourist-village/" target="_blank">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Tour Packages Section for Nagaland -->
+<div class="section">
+    <h2>Tour Packages in Nagaland</h2>
+    <div class="container">
+        <!-- Kohima Tour Package -->
+        <div class="platform-card" style="background-image: url('image/kohima\'.jpg');">
+            <div class="platform-content">
+                <h3>Kohima City Tour</h3>
+                <p>Explore the capital city of Nagaland, known for its historical significance and scenic beauty.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Dzukou Valley Trekking Tour -->
+        <div class="platform-card" style="background-image: url('image/dzukou.cms');">
+            <div class="platform-content">
+                <h3>Dzukou Valley Trekking</h3>
+                <p>Embark on a thrilling trek through the breathtaking Dzukou Valley, known for its vibrant landscapes and flowers.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Mon Village & Konyak Tribe Cultural Tour -->
+        <div class="platform-card" style="background-image: url('image/mon.webp');">
+            <div class="platform-content">
+                <h3>Mon and Konyak Tribe Experience</h3>
+                <p>Discover the rich cultural heritage of the Konyak tribe and explore the unique villages of Mon.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Khonoma Village Eco-tourism Package -->
+        <div class="platform-card" style="background-image: url('image/Kohnoma.jpg');">
+            <div class="platform-content">
+                <h3>Khonoma Village Eco-tourism</h3>
+                <p>Visit Asia's first green village, famous for its biodiversity and the integration of traditional culture with nature conservation.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Tuophema Village Traditional Naga Culture Tour -->
+        <div class="platform-card" style="background-image: url('image/touphema.jpg');">
+            <div class="platform-content">
+                <h3>Tuophema Village Tour</h3>
+                <p>Experience authentic Naga culture in the picturesque Tuophema village, known for its traditional homestays and festivals.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Dimapur and Nagaland War Cemetery Tour -->
+        <div class="platform-card" style="background-image: url('image/dimapur.jpg');">
+            <div class="platform-content">
+                <h3>Dimapur and War Cemetery Tour</h3>
+                <p>Explore the historical significance of Dimapur, visit the Nagaland War Cemetery, and learn about World War II history.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Wokha and Lotha Tribe Cultural Tour -->
+        <div class="platform-card" style="background-image: url('image/wokha.png');">
+            <div class="platform-content">
+                <h3>Wokha and Lotha Tribe Cultural Tour</h3>
+                <p>Immerse yourself in the cultural heritage of the Lotha tribe and explore the scenic beauty of Wokha.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Mokokchung and Ao Tribe Heritage Tour -->
+        <div class="platform-card" style="background-image: url('image/mokochung.jpg');">
+            <div class="platform-content">
+                <h3>Mokokchung and Ao Tribe Heritage Tour</h3>
+                <p>Visit Mokokchung to explore the Ao tribe's cultural heritage, arts, and unique villages.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Tuensang Tribal Experience Tour -->
+        <div class="platform-card" style="background-image: url('image/tuensang.jpg');">
+            <div class="platform-content">
+                <h3>Tuensang Tribal Experience</h3>
+                <p>Discover the traditional lifestyle and customs of the tribes in Tuensang, including the Yimchungrü, Sangtam, and Khiamniungan tribes.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ticket Booking Platforms Section -->
+<div class="section1">
+    <h2>Ticket Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/irctc.jpg');">
+            <div class="platform-content">
+                <h3>IRCTC</h3>
+                <p>Book train tickets across India for your journey to Nagaland.</p>
+                <a href="https://www.irctc.co.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book train, bus, and flight tickets across India with ease through MakeMyTrip.</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/redbus.png');">
+            <div class="platform-content">
+                <h3>redBus</h3>
+                <p>Book buses to explore Nagaland and nearby regions through RedBus.</p>
+                <a href="https://www.redbus.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/ixigo.png');">
+            <div class="platform-content">
+                <h3>ixigo</h3>
+                <p>Book train and flight tickets across India through ixigo.</p>
+                <a href="https://www.ixigo.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/abhibus.png');">
+            <div class="platform-content">
+                <h3>abhibus</h3>
+                <p>Book bus, train, and flight tickets across India through abhibus.</p>
+                <a href="https://www.abhibus.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hotel Booking Platforms Section -->
+<div class="section2">
+    <h2>Hotel Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/goibibo.jpeg');">
+            <div class="platform-content">
+                <h3>goibibo</h3>
+                <p>Book your stay across Nagaland through goibibo.</p>
+                <a href="https://www.goibibo.com/hotels/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/oyo.png');">
+            <div class="platform-content">
+                <h3>OYO</h3>
+                <p>Find and book hotels for a comfortable stay in Nagaland through OYO.</p>
+                <a href="https://www.oyorooms.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/agoda.png');">
+            <div class="platform-content">
+                <h3>Agoda</h3>
+                <p>Book hotels across India for a comfortable stay with ease through Agoda.</p>
+                <a href="https://www.agoda.com/en-in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 TravelSaathi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

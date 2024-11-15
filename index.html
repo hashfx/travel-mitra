@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #1e3341;
+        }
+        header {
+            background-color: #3c4922;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(243, 246, 247);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .section1 {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(166, 227, 247);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .section2 {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(131, 242, 212);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .section3 {
+            padding: 50px;
+            margin: 20px;
+            background-color: rgb(192, 145, 222);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        
+        .section4 {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(202, 234, 147);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .section5 {
+            padding: 20px;
+            margin: 20px;
+            background-color: #1e3341;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .section5 h2 {
+            color: #333;
+        }
+        .section5 p {
+            color: #666;
+        }
+
+        .container {
+            display: flex; /* Flex layout for horizontal scrolling */
+            overflow-x: auto; /* Enable horizontal scrolling */
+            gap: 40px; /* Spacing between cards */
+            padding-bottom: 10px;
+        }
+        .platform-card {
+            min-width: 300px; /* Minimum width to fit within the scrolling area */
+            flex: 0 0 auto; /* Prevents the card from shrinking or growing */
+            height: 400px;
+            background-size: contain;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: white;
+            position: relative;
+        }
+        .platform-card:hover {
+            transform: scale(1.05);
+        }
+        .platform-card1 {
+            min-width: 270px; /* Minimum width to fit within the scrolling area */
+            flex: 0 0 auto; /* Prevents the card from shrinking or growing */
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: white;
+            position: relative;
+        }
+        .platform-card1:hover {
+            transform: scale(1.05);
+        }
+        .platform-card2 {
+            min-width: 300px; /* Minimum width to fit within the scrolling area */
+            flex: 0 0 auto; /* Prevents the card from shrinking or growing */
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: rgb(244, 248, 249);
+            position: relative;
+        }
+        .platform-card2:hover {
+            transform: scale(1.05);
+        }
+        .platform-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+        }
+        .platform-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .platform-content p {
+            margin: 5% 0;
+        }
+        .platform-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .platform-content a:hover {
+            background-color: #388E3C;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Your Travel Planner</h1>
+    <p>Your one-stop solution for planning trips across India</p>
+</header>
+
+<!-- Explore by State Section -->
+<div class="section">
+    <h2>Explore by State</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/andaman.jpg');">
+            <div class="platform-content">
+                <h3>Andaman & Nicobar Islands</h3>
+                <p>"Paradise Awaits: Dive into Andaman's Crystal Waters!"</p>
+                <a href="andaman.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/Andhra-Pradsesh.jpeg');">
+            <div class="platform-content">
+                <h3>Andhra Pradesh</h3>
+                <p>"Experience the Spiritual Essence and Coastal Beauty of Andhra Pradesh!"</p>
+                <a href="andhra.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/arunanchal.jpg');">
+            <div class="platform-content">
+                <h3>Arunachal Pradesh</h3>
+                <p>"Explore the Mystical Mountains and Vibrant Cultures of Arunachal Pradesh!"</p>
+                <a href="arunachal.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/assam.webp');">
+            <div class="platform-content">
+                <h3>Assam</h3>
+                <p>"Tea Gardens and Wildlife: Experience the Untamed Beauty of Assam!"</p>
+                <a href="assam.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/Bihar.png');">
+            <div class="platform-content">
+                <h3>Bihar</h3>
+                <p>"Spiritual Sojourn: Experience the Roots of Buddhism and Ancient Civilizations!"</p>
+                <a href="bihar.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/chattisgarh.jpeg');">
+            <div class="platform-content">
+                <h3>Chhattisgarh</h3>
+                <p>"Untouched Landscapes: Explore the Wilderness and Tribal Culture!"</p>
+                <a href="chattisgarh.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/goa.jpg');">
+            <div class="platform-content">
+                <h3>Goa</h3>
+                <p>"Sun, Sand, and Sea: Unwind in Goa's Tropical Bliss!"</p>
+                <a href="goa.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/gujarat.jpg');">
+            <div class="platform-content">
+                <h3>Gujarat,Daman & Diu,Dadra & Nagar Haveli</h3>
+                <p>"Colorful Heritage: Explore the Vibrancy of Culture and Wildlife!"</p>
+                <a href="gujarat.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/haryana.jpg');">
+            <div class="platform-content">
+                <h3>Haryana</h3>
+                <p>"Discover the Heritage and Modern Charm of Haryana!"</p>
+                <a href="haryana.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/himchal.jpg');">
+            <div class="platform-content">
+                <h3>Himachal Pradesh</h3>
+                <p>"Nature's Playground: Revel in the Majestic Mountains and Alpine Adventures!"</p>
+                <a href="himachal.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/j&k.webp');">
+            <div class="platform-content">
+                <h3>Jammu & Kashmir</h3>
+                <p>"Heaven on Earth: Discover the Majestic Beauty of the Valley!"</p>
+                <a href="jammu.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/jharkhand.jpg');">
+            <div class="platform-content">
+                <h3>Jharkhand</h3>
+                <p>"Uncover the Natural Wonders and Rich Tribal Heritage of Jharkhand!"</p>
+                <a href="jharkhand.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/karnataka.jpg');">
+            <div class="platform-content">
+                <h3>Karnataka</h3>
+                <p>"From IT Hubs to Hill Stations: A Journey Through Diversity!"</p>
+                <a href="karnataka.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/kerala.jpg');">
+            <div class="platform-content">
+                <h3>Kerala</h3>
+                <p>"God's Own Country: Explore the Serene Backwaters and Lush Greenery!"</p>
+                <a href="kerala.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/ladakh.webp');">
+            <div class="platform-content">
+                <h3>Ladakh</h3>
+                <p>"Embrace the Majestic Landscapes and Tranquility of Ladakh!"</p>
+                <a href="ladakh.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/lakshadweep.webp');">
+            <div class="platform-content">
+                <h3>Lakshadweep</h3>
+                <p>"Dive into the Pristine Waters and Serene Islands of Lakshadweep!"</p>
+                <a href="lakshadweep.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/madhya-pradesh.jpg');">
+            <div class="platform-content">
+                <h3>Madhya Pradesh</h3>
+                <p>"Heart of Incredible India: Where History and Nature Converge!"</p>
+                <a href="madhya.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/maharashtra.jpg');">
+            <div class="platform-content">
+                <h3>Maharashtra</h3>
+                <p>"Beyond Mumbai: Discover Maharashtra's Rich Heritage and Scenic Hills!"</p>
+                <a href="maharashtra.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/manipur.jpg');">
+            <div class="platform-content">
+                <h3>Manipur</h3>
+                <p>"Immerse Yourself in the Rich Culture and Scenic Beauty of Manipur!"</p>
+                <a href="manipur.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/meghalaya.jpg');">
+            <div class="platform-content">
+                <h3>Meghalaya</h3>
+                <p>"Chase Waterfalls and Revel in the Cloud-Kissed Hills of Meghalaya!"</p>
+                <a href="meghalaya.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/mizoram.jpg');">
+            <div class="platform-content">
+                <h3>Mizoram</h3>
+                <p>"Discover the Enchanting Hills and Warm Hospitality of Mizoram!"</p>
+                <a href="mizoram.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/nagaland.jpg');">
+            <div class="platform-content">
+                <h3>Nagaland</h3>
+                <p>"Experience the Vibrant Festivals and Rich Traditions of Nagaland!"</p>
+                <a href="nagaland.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/odisha.jpg');">
+            <div class="platform-content">
+                <h3>Odisha</h3>
+                <p>"Temple Trails: Discover Ancient Architecture and Beautiful Beaches!"</p>
+                <a href="odisha.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/punjab.webp');">
+            <div class="platform-content">
+                <h3>Punjab</h3>
+                <p>"Vibrant Culture: Savor the Flavors and Festivities of Punjab!"</p>
+                <a href="punjab.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/rajasthan.jpg');">
+            <div class="platform-content">
+                <h3>Rajasthan</h3>
+                <p>"Experience Royalty: Discover the Timeless Forts and Palaces!"</p>
+                <a href="rajasthan.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/sikkim.jpg');">
+            <div class="platform-content">
+                <h3>Sikkim</h3>
+                <p>"A Himalayan Jewel: Breathe in the Serenity and Scenic Beauty!"</p>
+                <a href="sikkim.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/tamilnadu.jpg');">
+            <div class="platform-content">
+                <h3>Tamil Nadu</h3>
+                <p>"Cultural Odyssey: Embrace Tradition and Temples in Tamil Nadu!"</p>
+                <a href="tamilnadu.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/telangana.jpg');">
+            <div class="platform-content">
+                <h3>Telangana</h3>
+                <p>"Emerging Heritage: Unravel the History of Telangana's Forts and Food!"</p>
+                <a href="telangana.html">Learn more</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/tripura.jpg');">
+            <div class="platform-content">
+                <h3>Tripura</h3>
+                <p>Experience the royal palaces, forts, and the vibrant culture of Rajasthan.</p>
+                <a href="tripura.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/upstate.webp');">
+            <div class="platform-content">
+                <h3>Uttar Pradesh</h3>
+                <p>"Land of History: Walk Through the Pages of India’s Majestic Past!"</p>
+                <a href="uttar.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/uttarakhand.jpg');">
+            <div class="platform-content">
+                <h3>Uttrakhand</h3>
+                <p>"Rejuvenate in the Majestic Himalayas and Sacred Waters of Uttarakhand!"</p>
+                <a href="uttrakhand.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/westbengal.jpg');">
+            <div class="platform-content">
+                <h3>West Bengal</h3>
+                <p>"Cultural Mosaic: Experience the Arts, Cuisine, and the River Ganges!"</p>
+                <a href="westbengal.html">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- video -->
+<div class="section5">
+    <!-- <h2>Explore India through Video</h2>
+    <p>Get a glimpse of the beauty and diversity of India with this short video!</p> -->
+    <video controls autoplay loop width="30%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <source src="image/Untitled video - Made with Clipchamp (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<!-- Ticket Booking Platforms Section -->
+<div class="section1">
+    <h2>Ticket Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card1" style="background-image: url('image/irctc.jpg');">
+            <div class="platform-content">
+                <h3>IRCTC</h3>
+                <p>Book train tickets across India with ease through IRCTC.</p>
+                <a href="https://www.irctc.co.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card1" style="background-image: url('image/redbus.png');">
+            <div class="platform-content">
+                <h3>redBus</h3>
+                <p>Book train & Bus with guaranteed tickets across India with ease through Redbus.</p>
+                <a href="https://www.redbus.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card1" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book train, Bus & Flight  tickets with guarantee across India with ease through MakeMyTrip.</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card1" style="background-image: url('image/ixigo.png');">
+            <div class="platform-content">
+                <h3>ixigo</h3>
+                <p>>Book train & Flight  tickets across India with ease through ixigo.</p>
+                <a href="https://www.ixigo.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card1" style="background-image: url('image/abhibus.png');">
+            <div class="platform-content">
+                <h3>abhibus</h3>
+                <p>Book Bus, train & flight tickets across India with ease through abhibus.</p>
+                <a href="https://www.abhibus.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add similar sections for Taxi, Hotel, and Food Delivery as needed -->
+<div class="section2">
+    <h2>Hotels Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card2" style="background-image: url('image/goibibo.jpeg');">
+            <div class="platform-content">
+                <h3>goibibo</h3>
+                <p>Book hotels across India for your safe stay with ease through goibibo.</p>
+                <a href="https://www.goibibo.com/hotels/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card2" style="background-image: url('image/oyo.png');">
+            <div class="platform-content">
+                <h3>OYO</h3>
+                <p>Book hotels across India easily for your safe stay with ease through OYO.</p>
+                <a href="https://www.oyorooms.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card2" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book Hotels with guarantee across India with ease through MakeMyTrip..</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card2" style="background-image: url('image/agoda.png');">
+            <div class="platform-content">
+                <h3>Agoda</h3>
+                <p>Book hotels across India easily for your safe stay with ease through agoda</p>
+                <a href="https://www.agoda.com/en-in/?cid=1844104&ds=J%2BoPuD0%2BxZ0QFbaX" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section3">
+    <h2>Cabs & Taxi Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card1" style="background-image: url('image/ola.png');">
+            <div class="platform-content">
+                <h3>Ola</h3>
+                <!-- <p>Book train tickets across India with ease through IRCTC.</p> -->
+                <a href="https://book.olacabs.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card1" style="background-image: url('image/uber.png');">
+            <div class="platform-content">
+                <h3>Uber</h3>
+                <!-- <p>Book train tickets across India with ease through IRCTC.</p> -->
+                <a href="https://www.uber.com/in/en/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card1" style="background-image: url('image/Rapido.png');">
+            <div class="platform-content">
+                <h3>Rapido</h3>
+                <!-- <p>Book train tickets across India with ease through IRCTC.</p> -->
+                <a href="https://www.rapido.bike/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <!-- <div class="platform-card" style="background-image: url('image/andaman.jpg');">
+            <div class="platform-content">
+                <h3>IRCTC</h3>
+                <p>Book train tickets across India with ease through IRCTC.</p>
+                <a href="https://www.irctc.co.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('redbus.jpg');">
+            <div class="platform-content">
+                <h3>Redbus</h3>
+                <p>Reserve bus tickets conveniently with Redbus.</p>
+                <a href="https://www.redbus.in/" target="_blank">Book Now</a>
+            </div>
+        </div> -->
+    </div>
+</div>
+
+<div class="section4">
+    <h2>Food Delivery Platforms</h2>
+    <div class="container">
+        <div class="platform-card1" style="background-image: url('image/zomato.png');">
+            <div class="platform-content">
+                <h3>Zomato</h3>
+                <!-- <p>Book train tickets across India with ease through IRCTC.</p> -->
+                <a href="https://www.zomato.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card1" style="background-image: url('image/swiggy.png');">
+            <div class="platform-content">
+                <h3>Swiggy</h3>
+                <!-- <p>Book train tickets across India with ease through IRCTC.</p> -->
+                <a href="https://www.swiggy.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card1" style="background-image: url('image/blinkit.png');">
+            <div class="platform-content">
+                <h3>Blinkit</h3>
+                <!-- <p>Book train tickets across India with ease through IRCTC.</p> -->
+                <a href="https://blinkit.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card1" style="background-image: url('image/bigbasket.png');">
+            <div class="platform-content">
+                <h3>BigBasket</h3>
+                <!-- <p>Book train tickets across India with ease through IRCTC.</p> -->
+                <a href="https://www.bigbasket.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card1" style="background-image: url('image/zepto.png');">
+            <div class="platform-content">
+                <h3>Zepto</h3>
+                <!-- <p>Reserve bus tickets conveniently with Redbus.</p> -->
+                <a href="https://www.zeptonow.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 TravelSaathi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

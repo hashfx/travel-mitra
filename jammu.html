@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner - Jammu & Kashmir</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #a76666;
+        }
+        header {
+            background-color: #126de4;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: #fff;
+            color: #126de4;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ddd;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(79, 95, 117);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .section1 {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(191, 137, 204);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section1 h2 {
+            color: #333;
+        }
+        .section2 {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(185, 213, 121);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section2 h2 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+        .platform-card {
+            min-width: 300px;
+            flex: 0 0 auto;
+            height: 350px;
+            background-size: contain;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: white;
+            position: relative;
+        }
+        .platform-card:hover {
+            transform: scale(1.05);
+        }
+        .platform-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .platform-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .platform-content p {
+            margin: 10px 0;
+        }
+        .platform-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #126de4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .platform-content a:hover {
+            background-color: #256328;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to your Travel Saathi in Jammu & Kashmir</h1>
+    <a href="index.html" class="back-button">Back</a>
+    <p>Discover the beauty of Jammu & Kashmir's landscapes, culture, and attractions with us!</p>
+</header>
+
+<!-- Explore by Destination Section -->
+<div class="section">
+    <h2>Explore by Destination</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/srinagar.webp');">
+            <div class="platform-content">
+                <h3>Srinagar</h3>
+                <p>"The Heart of Kashmir"</p>
+                <a href="https://srinagartourism.com/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/Vaishnodevi.jpg');">
+            <div class="platform-content">
+                <h3>Vaishno Devi</h3>
+                <p>"Moonh Maangi Muradein Poori Karne Wali Mata"</p>
+                <a href="https://srinagartourism.com/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/dachingam.jpg');">
+            <div class="platform-content">
+                <h3>Dachigam National Park</h3>
+                <p>"the home of the hangul, or Kashmir stag."</p>
+                <a href="https://srinagar.nic.in/tourist-place/dachigam-national-park/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/amarnath.jpg');">
+            <div class="platform-content">
+                <h3>Amarnath</h3>
+                <p>"Bhole Shankar  narrates the secretsof immortality and creation of Universe to Maa Parvati ji ."</p>
+                <a href="https://jksasb.nic.in/">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/gulmarg.jpg');">
+            <div class="platform-content">
+                <h3>Gulmarg</h3>
+                <p>"Skiing Paradise and Scenic Meadows"</p>
+                <a href="https://www.tourmyindia.com/states/jammu-kashmir/gulmarg.html">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/pahalgam.avif');">
+            <div class="platform-content">
+                <h3>Pahalgam</h3>
+                <p>"Valley of Shepherds"</p>
+                <a href="https://www.kashmir-tourism.org/tourist-destinations/pahalgam.html">Learn more</a>
+            </div>
+        </div>
+        <!-- <div class="platform-card" style="background-image: url('image/LEH.jpg');">
+            <div class="platform-content">
+                <h3>Leh</h3>
+                <p>"Gateway to the Himalayas"</p>
+                <a href="https://www.jktourism.jk.gov.in/">Learn more</a>
+            </div>
+        </div> -->
+        <div class="platform-card" style="background-image: url('image/sonamarg.jpg');">
+            <div class="platform-content">
+                <h3>Sonamarg</h3>
+                <p>"Meadow of Gold"</p>
+                <a href="https://www.jktdc.co.in/sonamarg.aspx">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tour Packages Section for Jammu -->
+<div class="section">
+    <h2>Tour Packages in Jammu</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/srinagar.webp');">
+            <div class="platform-content">
+                <h3>Srinagar City Experience</h3>
+                <p>Explore the enchanting Dal Lake and Mughal gardens of Srinagar.</p>
+                <p><strong>Duration:</strong> 4 Days / 3 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/Vaishnodevi.jpg');">
+            <div class="platform-content">
+                <h3>Vaishno Devi Pilgrimage</h3>
+                <p>A spiritual journey to the holy shrine of Vaishno Devi.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/dachingam.jpg');">
+            <div class="platform-content">
+                <h3>Dachigam National Park Adventure</h3>
+                <p>Wildlife safari in the beautiful Dachigam National Park, home of the hangul.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/amarnath.jpg');">
+            <div class="platform-content">
+                <h3>Amarnath Cave Trek</h3>
+                <p>A spiritual trek to the sacred Amarnath Cave, known for its ice Shiva Lingam.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/gulmarg.jpg');">
+            <div class="platform-content">
+                <h3>Gulmarg Ski Adventure</h3>
+                <p>Experience skiing and the stunning landscapes of Gulmarg.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/pahalgam.avif');">
+            <div class="platform-content">
+                <h3>Pahalgam Valley Trek</h3>
+                <p>Discover the breathtaking scenery and serene atmosphere of Pahalgam.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/sonamarg.jpg');">
+            <div class="platform-content">
+                <h3>Sonamarg Nature Retreat</h3>
+                <p>Relax in the stunning meadows of Sonamarg, perfect for picnics and treks.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <div class="platform-card" style="background-image: url('image/bhaderwah.jpg');">
+            <div class="platform-content">
+                <h3>Bhaderwah Valley Tour</h3>
+                <p>Experience the beauty and tranquility of Bhaderwah, known as the 'Mini Kashmir.'</p>
+                <p><strong>Duration:</strong> 4 Days / 3 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Ticket Booking Platforms Section -->
+<div class="section1">
+    <h2>Ticket Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/irctc.jpg');">
+            <div class="platform-content">
+                <h3>IRCTC</h3>
+                <p>Book train tickets across India for your journey to Jammu & Kashmir.</p>
+                <a href="https://www.irctc.co.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/redbus.png');">
+            <div class="platform-content">
+                <h3>redBus</h3>
+                <p>Book buses to explore Jammu & Kashmir and nearby regions through RedBus.</p>
+                <a href="https://www.redbus.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book train, bus, and flight tickets across India with ease through MakeMyTrip.</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/ixigo.png');">
+            <div class="platform-content">
+                <h3>ixigo</h3>
+                <p>Book train and flight tickets across India through ixigo.</p>
+                <a href="https://www.ixigo.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/abhibus.png');">
+            <div class="platform-content">
+                <h3>abhibus</h3>
+                <p>Book bus, train, and flight tickets across India through abhibus.</p>
+                <a href="https://www.abhibus.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hotel Booking Platforms Section -->
+<div class="section2">
+    <h2>Hotel Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/goibibo.jpeg');">
+            <div class="platform-content">
+                <h3>goibibo</h3>
+                <p>Book your stay across Jammu & Kashmir through goibibo.</p>
+                <a href="https://www.goibibo.com/hotels/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/oyo.png');">
+            <div class="platform-content">
+                <h3>OYO</h3>
+                <p>Find and book hotels for a comfortable stay in Jammu & Kashmir through OYO.</p>
+                <a href="https://www.oyorooms.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/agoda.png');">
+            <div class="platform-content">
+                <h3>Agoda</h3>
+                <p>Book hotels across India for a comfortable stay with ease through Agoda.</p>
+                <a href="https://www.agoda.com/en-in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 TravelSaathi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

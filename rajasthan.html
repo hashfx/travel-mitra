@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner - Rajasthan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f3e0a7;
+        }
+        header {
+            background-color: #bf5b04;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        .back-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: #fff;
+            color: #bf5b04;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ddd;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #f2ca80;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #333;
+        }
+        .section1 {
+            padding: 20px;
+            margin: 20px;
+            background-color: #d4a76c;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section2 {
+            padding: 20px;
+            margin: 20px;
+            background-color: #bc8f4f;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 10px;
+        }
+        .platform-card {
+            min-width: 300px;
+            flex: 0 0 auto;
+            height: 350px;
+            background-size: contain;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: white;
+            position: relative;
+        }
+        .platform-card:hover {
+            transform: scale(1.05);
+        }
+        .platform-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .platform-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .platform-content p {
+            margin: 10px 0;
+        }
+        .platform-content a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #bf5b04;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .platform-content a:hover {
+            background-color: #8e3f04;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to your Travel Saathi in Rajasthan</h1>
+    <a href="index.html" class="back-button">Back</a>
+    <p>Discover the royal heritage, vibrant culture, and scenic landscapes of Rajasthan with us!</p>
+</header>
+
+<!-- Explore by Destination Section -->
+<div class="section">
+    <h2>Explore by Destination</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/jaipur.webp');">
+            <div class="platform-content">
+                <h3>Jaipur</h3>
+                <p>"The Pink City, known for its historic forts and palaces."</p>
+                <a href="https://www.tourism.rajasthan.gov.in/jaipur.html" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/Jodhpur.jpg');">
+            <div class="platform-content">
+                <h3>Jodhpur</h3>
+                <p>"The Blue City, famous for the majestic Mehrangarh Fort."</p>
+                <a href="https://tourism.rajasthan.gov.in/jodhpur" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/udaipur.jpg');">
+            <div class="platform-content">
+                <h3>Udaipur</h3>
+                <p>"Known as the City of Lakes, offering romantic views and palaces."</p>
+                <a href="https://tourism.rajasthan.gov.in/udaipur" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/jaisalmer.jpg');">
+            <div class="platform-content">
+                <h3>Jaisalmer</h3>
+                <p>"The Golden City, known for its desert landscape and sandstone architecture."</p>
+                <a href="https://tourism.rajasthan.gov.in/jaisalmer" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/mountabu.webp');">
+            <div class="platform-content">
+                <h3>Mount Abu</h3>
+                <p>"Rajasthan's only hill station, surrounded by lush greenery."</p>
+                <a href="https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/mount-abu.html" target="_blank">Learn more</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/pushkar.jpg');">
+            <div class="platform-content">
+                <h3>Pushkar</h3>
+                <p>"World's only Brahma ji temple,don't miss the opportunity to get the blessing   ."</p>
+                <a href="https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/mount-abu.html" target="_blank">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Tour Packages Section for Rajasthan -->
+<div class="section">
+    <h2>Tour Packages in Rajasthan</h2>
+    <div class="container">
+        <!-- Jaipur Heritage Tour -->
+        <div class="platform-card" style="background-image: url('image/jaipur.webp');">
+            <div class="platform-content">
+                <h3>Jaipur Heritage Tour</h3>
+                <p>Explore the iconic forts and palaces of Jaipur, including Amber Fort and City Palace.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Jodhpur Forts and Culture Tour -->
+        <div class="platform-card" style="background-image: url('image/Jodhpur.jpg');">
+            <div class="platform-content">
+                <h3>Jodhpur Forts and Culture Tour</h3>
+                <p>Visit the majestic Mehrangarh Fort and experience the vibrant culture of the Blue City.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Udaipur Lakes and Palaces Tour -->
+        <div class="platform-card" style="background-image: url('image/udaipur.jpg');">
+            <div class="platform-content">
+                <h3>Udaipur Lakes and Palaces Tour</h3>
+                <p>Experience the romantic views of Udaipur, with visits to Lake Pichola and City Palace.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Jaisalmer Desert Adventure Tour -->
+        <div class="platform-card" style="background-image: url('image/jaisalmer.jpg');">
+            <div class="platform-content">
+                <h3>Jaisalmer Desert Adventure Tour</h3>
+                <p>Explore the Golden City, with its stunning sandstone architecture and desert safari experiences.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Mount Abu Hill Station Retreat -->
+        <div class="platform-card" style="background-image: url('image/mountabu.webp');">
+            <div class="platform-content">
+                <h3>Mount Abu Hill Station Retreat</h3>
+                <p>Enjoy a refreshing getaway at Rajasthan's only hill station, with scenic views and cool climate.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        
+
+        <!-- Bikaner Desert and Forts Tour -->
+        <div class="platform-card" style="background-image: url('image/bikaner.jpg');">
+            <div class="platform-content">
+                <h3>Bikaner Desert and Forts Tour</h3>
+                <p>Explore the rich heritage of Bikaner, visiting Junagarh Fort and enjoying desert safaris.</p>
+                <p><strong>Duration:</strong> 2 Days / 1 Night</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Ranthambore Wildlife Safari Tour -->
+        <div class="platform-card" style="background-image: url('image/ranthambore.avif');">
+            <div class="platform-content">
+                <h3>Ranthambore Wildlife Safari Tour</h3>
+                <p>Experience thrilling wildlife safaris in Ranthambore National Park, home to majestic tigers.</p>
+                <p><strong>Duration:</strong> 3 Days / 2 Nights</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Chittorgarh Fort Tour -->
+        <div class="platform-card" style="background-image: url('image/chittorgarh.avif');">
+            <div class="platform-content">
+                <h3>Chittorgarh Fort Tour</h3>
+                <p>Visit the historic Chittorgarh Fort, a UNESCO World Heritage Site, and learn about its royal history.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Ajmer Dargah Sharif Tour -->
+        <div class="platform-card" style="background-image: url('image/pushkar.jpg');">
+            <div class="platform-content">
+                <h3>Ajmer Dargah Sharif & pushkar Tour</h3>
+                <p>Experience the spiritual ambiance of Ajmer Sharif Dargah & Bramha temple and its rich history.</p>
+                <p><strong>Duration:</strong> 1 Day</p>
+                <a href="ticket.html" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ticket Booking Platforms Section -->
+<div class="section1">
+    <h2>Ticket Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/irctc.jpg');">
+            <div class="platform-content">
+                <h3>IRCTC</h3>
+                <p>Book train tickets across India for your journey to Rajasthan.</p>
+                <a href="https://www.irctc.co.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/makemytrip.webp');">
+            <div class="platform-content">
+                <h3>MakeMyTrip</h3>
+                <p>Book train, bus, and flight tickets across India with ease through MakeMyTrip.</p>
+                <a href="https://www.makemytrip.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/redbus.png');">
+            <div class="platform-content">
+                <h3>redBus</h3>
+                <p>Book buses to explore Rajasthan and nearby regions through RedBus.</p>
+                <a href="https://www.redbus.in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/ixigo.png');">
+            <div class="platform-content">
+                <h3>ixigo</h3>
+                <p>Book train and flight tickets across India through ixigo.</p>
+                <a href="https://www.ixigo.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/abhibus.png');">
+            <div class="platform-content">
+                <h3>abhibus</h3>
+                <p>Book bus, train, and flight tickets across India through abhibus.</p>
+                <a href="https://www.abhibus.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hotel Booking Platforms Section -->
+<div class="section2">
+    <h2>Hotel Booking Platforms</h2>
+    <div class="container">
+        <div class="platform-card" style="background-image: url('image/goibibo.jpeg');">
+            <div class="platform-content">
+                <h3>goibibo</h3>
+                <p>Book your stay across Rajasthan through goibibo.</p>
+                <a href="https://www.goibibo.com/hotels/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/oyo.png');">
+            <div class="platform-content">
+                <h3>OYO</h3>
+                <p>Find and book hotels for a comfortable stay in Rajasthan through OYO.</p>
+                <a href="https://www.oyorooms.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <div class="platform-card" style="background-image: url('image/agoda.png');">
+            <div class="platform-content">
+                <h3>Agoda</h3>
+                <p>Book hotels across India for a comfortable stay with ease through Agoda.</p>
+                <a href="https://www.agoda.com/en-in/" target="_blank">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 TravelSaathi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
